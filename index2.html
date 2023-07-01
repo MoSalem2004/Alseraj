@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Alseraj Almoneer Gallary</title>
+		<link rel="stylesheet" href="./Css/normalize.css">
+		<link rel="stylesheet" href="./Css/fontawesome.css">
+		<link rel="stylesheet" href="./Css/all.min.css">
+		<link rel="stylesheet" href="./Css/bootstrap.min.css">
+		<link rel="stylesheet" href="./Css/master.css">
+	</head>
+
+	<body>
+		<!-- Start Setting-box  -->
+		<div class="Setting-box">
+			<div class="icon-box">
+				<div class="icon">
+					<i class="fas fa-cog"></i>
+				</div>
+			</div>
+			<div class="container">
+				<div class="option-box">
+					<h3>أختر اللون</h3>
+					<ul class="The-Option">
+						<li class="colors active-color" data-color="#0088ff"></li>
+						<li class="colors" data-color="#E91E63"></li>
+						<li class="colors" data-color="#51c76b"></li>
+						<li class="colors" data-color="#45b09e"></li>
+						<li class="colors" data-color="#d858a3"></li>
+					</ul>
+					<div class="more">
+						<span>المزيد :</span>
+						<input type="color" id="The_color" onblur="All_color()">
+					</div>
+					<!-- <div class="Done">تم</div> -->
+				</div>
+				<div class="option-box">
+					<h3>الثيم</h3>
+					<label>
+						<input class="toggle-checkbox" type="checkbox" checked="">
+						<div class="toggle-switch fas fa-moon"></div>
+					</label>
+				</div>
+				<div class="option-box">
+					<h3>إظهار الإختصارات</h3>
+					<div class="countan f-c-c gap-2">
+						<div class="No">لا</div>
+						<div class="Yes active">نعم</div>
+					</div>
+				</div>
+				<div class="option-box">
+					<h3>حجم الخط</h3>
+					<div class="contain f-c-c justify-content-between">
+						<span onclick="Font_Value_function()" id="font_value--" class="button">-</span>
+						<span id="font_value" class="button">16</span>
+						<span onclick="Font_Value_function()" id="font_value-+" class="button">+</span>
+					</div>
+					<!-- <input type="range" min="14" max="21" name="" id="Input_Range" value="localStorage.getItem('font_value')" -->
+					<!-- onmousemove="Range(this.value)" onchange="Range(this.value)"> -->
+				</div>
+				<button class="Reset-Option">حذف التغييرات</button>
+			</div>
+		</div>
+		<!-- End Setting-box  -->
+
+		<!-- Start Gallary  -->
+		<div class="Gallary w-100 position-absolute open" id="Gallary">
+			<div class="contain">
+				<div class="close position-relative d-flex">
+					<div class="bg-white"><a href="./index.html#Gallary-View"> X</a></div>
+				</div>
+				<div class="title-gallery" id="Gallary">معرض الصور</div>
+				<aside class="w-100 d-flex align-items-center justify-content-right bg-white" id="THE-END-IMG">
+					<div data-set=".img-box" class="box active All">الكل</div>
+					<div data-set="Travel" class="box">رحلات</div>
+					<div data-set="Party" class="box">حفلات</div>
+					<div data-set="Campe" class="box">معسكرات</div>
+					<div data-set="HelloSchool" class="box">إستقبال المدرسة</div>
+					<div data-set="Challenge" class="box">مسابقات</div>
+					<div data-set="Football" class="box">أكاديمية كرة القدم</div>
+					<div data-set="Nadoat" class="box">ندوات</div>
+					<div data-set="Sience" class="box">علوم</div>
+					<div data-set="sportDay" class="box">الأيام الترفية</div>
+					<div data-set="Cooking" class="box">طبخ</div>
+					<div data-set="ByHand" class="box">أعمال يدوية</div>
+					<div data-set="Socity" class="box">دراسات إجتماعية</div>
+					<div data-set="Farma" class="box">زراعة </div>
+				</aside>
+				<div class="container-Gallary d-flex w-100">
+					<div class="img-box Campe">
+						<img src="./img/img-Al Seraj/المطافي.jpg" alt="">
+						<div class="caption">
+							<h3>يوم المهن</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Football">
+						<img src="./img/img-Al Seraj/بكرة قدم.jpg" alt="">
+						<div class="caption">
+							<h3>كرة قدم</h3>
+							<p> <q>التاريخ :</q> <span>2015</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel">
+						<img src="./img/صور رحلات/المتحف المصري.jpg" alt="المتحف المصري">
+						<div class="caption">
+							<h3>المتحف المصري</h3>
+							<p> <q>التاريخ :</q> <span>2015</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel">
+						<img src="./img/صور رحلات/رحلة أوائل الطلبة للمتحف الجايولجي.jpg"
+							alt="رحلة أوائل الطلبة للمتحف الجايولجي">
+						<div class="caption">
+							<h3>رحلة أوائل الطلبة للمتحف الجايولجي</h3>
+							<p> <q>التاريخ :</q> <span>2016</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel">
+						<img src="./img/صور رحلات/رحلة السيرك الإيطالي.jpg" alt="رحلة السيرك الإيطالي">
+						<div class="caption">
+							<h3>رحلة السيرك الإيطالي</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel">
+						<img src="./img/صور رحلات/رحلة توكيز (1).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة توكيز</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel">
+						<img src="./img/صور رحلات/رحلة توكيز (11).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة توكيز</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel">
+						<img src="./img/صور رحلات/رحلة توكيز (10).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة توكيز</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة توكيز (9).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة توكيز</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة توكيز (8).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة توكيز</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة توكيز (7).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة توكيز</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة توكيز (6).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة توكيز</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Nadoat show">
+						<img src="./img/ندوات/تم ترشيح المعهد من قبل مشيخة الأزهر لعمل ندوة بعنوان ( الأزهر يجمعنا ).jpg"
+							alt="تم ترشيح المعهد من قبل مشيخة الأزهر لعمل ندوة بعنوان ( الأزهر يجمعنا )">
+						<div class="caption">
+							<h3>ندوة بعنوان (الأزهر يجمعنا)</h3>
+							<p> <q>التاريخ :</q> <span>2015 / 3/ 11</span></p>
+						</div>
+					</div>
+					<div class="img-box Nadoat show">
+						<img src="./img/ندوات/تم ترشيح المعهد من قبل قطاع المعاهد الأزهرية لعمل ندوة بعنوان ( الوقاية من الأمراض المعدية).jpg"
+							alt="تم ترشيح المعهد من قبل قطاع المعاهد الأزهرية لعمل ندوة بعنوان ( الوقاية من الأمراض المعدية)">
+						<div class="caption">
+							<h3>ندوة بعنوان (الوقاية من الأمراض المعدية)</h3>
+							<p> <q>التاريخ :</q> <span>2015 / 3/ 16</span></p>
+						</div>
+					</div>
+					<div class="img-box Nadoat show">
+						<img src="./img/ندوات/مسابقةأوائل الطلبة طلاب معهد السراج و معهد الحسن الأزهرى.jpg" alt="">
+						<div class="caption">
+							<h3>مسابقةأوائل الطلبة طلاب معهد السراج و معهد الحسن الأزهري</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/الفائزون فى مسابقة الحديث.jpg" alt="">
+						<div class="caption">
+							<h3>الفائزون فى مسابقة الحديث</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/مسابقة القرآن الكريم.jpg" alt="">
+						<div class="caption">
+							<h3>مسابقة القرآن الكريم</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/مسابقة القران الكريم الأولى الصف الرابع الابتدائى - الفص الدرسى الأول 2018-2019.jpg"
+							alt="">
+						<div class="caption">
+							<h3>مسابقة القران الكريم الأولى الصف الرابع الابتدائى - الفص الدرسى الأول</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/مسابقة القران الكريم الأولى الصف الخامس الابتدائى - الفص الدرسى الأول 2018-2019.jpg"
+							alt="">
+						<div class="caption">
+							<h3>مسابقة القران الكريم الأولى الصف الخامس الابتدائى - الفص الدرسى الأول</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/مسابقة القرآن الكريم للمرحلة الاعدادية.jpg" alt="">
+						<div class="caption">
+							<h3>مسابقة القرآن الكريم للمرحلة الاعدادية</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/مسابقة القرآن الكريم للمرحلة الاعدادية (2).jpg" alt="">
+						<div class="caption">
+							<h3>مسابقة القرآن الكريم للمرحلة الاعدادية</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/مسابقة القرآن الكريم للمرحلة الابتدائية.jpg" alt="">
+						<div class="caption">
+							<h3>مسابقة القرآن الكريم للمرحلة الابتدائية</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/مسابقة القرآن الكريم (2).jpg" alt="">
+						<div class="caption">
+							<h3>مسابقة القرآن الكريم</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/مسابقة أجمل خط.jpg" alt="">
+						<div class="caption">
+							<h3>مسابقة أجمل خط</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/مسابقة أجمل خط (2).jpg" alt="">
+						<div class="caption">
+							<h3>مسابقة أجمل خط</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/تكريم أوائل مرحلة رياض الأطفال.jpg" alt="">
+						<div class="caption">
+							<h3>تكريم أوائل مرحلة رياض الأطفال</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/تسليم جوائز مسابقة القرآن الكريم 1439هـ  2018م.jpg" alt="">
+						<div class="caption">
+							<h3>تسليم جوائز مسابقة القرآن الكريم</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/الفائزون فى مسابقة القرآن الكريم.jpg" alt="">
+						<div class="caption">
+							<h3>الفائزون فى مسابقة القرآن الكريم</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/الفائزون فى مسابقة الخط مرحلة رياض الاطفال الفصل الدراسى الاول 2018-2019.jpg"
+							alt="">
+						<div class="caption">
+							<h3>الفائزون فى مسابقة الخط مرحلة رياض الاطفال الفصل الدراسى الاول</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/الفائزون فى مسابقة الحديث (4).jpg" alt="">
+						<div class="caption">
+							<h3>الفائزون فى مسابقة الحديث</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/الفائزون فى مسابقة الحديث (3).jpg" alt="">
+						<div class="caption">
+							<h3>الفائزون فى مسابقة الحديث</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/مسابقات/الفائزون فى مسابقة الحديث (2).jpg" alt="">
+						<div class="caption">
+							<h3>الفائزون فى مسابقة الحديث</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة توكيز (5).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة توكيز</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة توكيز (4).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة توكيز</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة توكيز (3).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة توكيز</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة توكيز (2).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة توكيز</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة توكيز.jpg" alt="">
+						<div class="caption">
+							<h3>رحلة توكيز</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة دريم بارك (1).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة دريم بارك</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة دريم بارك (2).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة دريم بارك</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة دريم بارك (3).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة دريم بارك</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة دريم بارك (4).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة دريم بارك</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة دريم بارك (5).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة دريم بارك</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة دريم بارك (6).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة دريم بارك</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة دريم بارك (7).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة دريم بارك</h3>
+							<p> <q>التاريخ :</q> <span>2017</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة دريم بارك .jpg" alt="">
+						<div class="caption">
+							<h3>رحلة دريم بارك</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة دريم بارك لرياض الأطفال.JPG" alt="">
+						<div class="caption">
+							<h3>رحلة دريم بارك لرياض الأطفال</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة سفاري بارك يوم الثلاثاء الموافق 14 11 2017م.jpg" alt="">
+						<div class="caption">
+							<h3>رحلة سفاري بارك</h3>
+							<p> <q>التاريخ :</q> <span>2017 / 14 /11</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة كيدزانيا (1).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة كيدزانيا</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة كيدزانيا (2).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة كيدزانيا</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/رحلة كيدزانيا (3).jpg" alt="">
+						<div class="caption">
+							<h3>رحلة كيدزانيا</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Travel show">
+						<img src="./img/صور رحلات/لقطات من قطار المرح ( الأولى ) ماجيك بلانيت 2018 - 2019 م.jpg" alt="">
+						<div class="caption">
+							<h3>قطار المرح ( الأولى ) ماجيك بلانيت</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Socity show">
+						<img src="./img/img-Al Seraj/دراسات.jpg" alt="">
+						<div class="caption">
+							<h3>دراسات إجتماعية</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Cooking show">
+						<img src="./img/img-Al Seraj/طبخ.jpg" alt="">
+						<div class="caption">
+							<h3>طبخ</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/img-Al Seraj/مسابقات (2).jpg" alt="">
+						<div class="caption">
+							<h3>مسابقات</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/img-Al Seraj/مسابقات (3).jpg" alt="">
+						<div class="caption">
+							<h3>مسابقات</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/img-Al Seraj/مسابقات (4).jpg" alt="">
+						<div class="caption">
+							<h3>مسابقات</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Challenge show">
+						<img src="./img/img-Al Seraj/مسابقات.jpg" alt="">
+						<div class="caption">
+							<h3>مسابقات</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Football show  ">
+						<img src="./img/img-Al Seraj/اكاديمية كره القدم.jpg" alt="">
+						<div class="caption">
+							<h3>كرة قدم</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box HelloSchool show">
+						<img src="./img/img-Al Seraj/حفلات التخرج ؤ الإستقبال.jpg" alt="">
+						<div class="caption">
+							<h3>إستقبال المدرسة</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Party show">
+						<img src="./img/صور حفلات/أوائل رياض أطفال الفصل الدراسى الأول.jpg" alt="">
+						<div class="caption">
+							<h3>أوائل رياض أطفال الفصل الدراسى الأول</h3>
+							<p> <q>التاريخ :</q> <span>2017</span></p>
+						</div>
+					</div>
+					<div class="img-box  HelloSchool show">
+						<img src="./img/صور حفلات/حفل استقبال مرحلة رياض الأطفال 2016- 2017.jpg" alt="">
+						<div class="caption">
+							<h3>حفل استقبال مرحلة رياض الأطفال</h3>
+							<p> <q>التاريخ :</q> <span>2016</span></p>
+						</div>
+					</div>
+					<div class="img-box Party show">
+						<img src="./img/صور حفلات/أوائل المرحلة الإبتدائية الفصل الدراسى الأول 2017- 2018.jpg" alt="">
+						<div class="caption">
+							<h3>أوائل المرحلة الإبتدائية الفصل الدراسى الأول</h3>
+							<p> <q>التاريخ :</q> <span>2017</span></p>
+						</div>
+					</div>
+					<div class="img-box Party show">
+						<img src="./img/صور حفلات/حفلة آخر العام 2017.jpg" alt="">
+						<div class="caption">
+							<h3>حفلة آخر العام</h3>
+							<p> <q>التاريخ :</q> <span>2017</span></p>
+						</div>
+					</div>
+					<div class="img-box Party show">
+						<img src="./img/صور حفلات/حفل تخرج نصف العام لمرحلة رياض الأطفال.jpg" alt="">
+						<div class="caption">
+							<h3>حفل تخرج نصف العام لمرحلة رياض الأطفال</h3>
+							<p> <q>التاريخ :</q> <span>2017</span></p>
+						</div>
+					</div>
+					<div class="img-box Cooking show">
+						<img src="./img/طبخ/طبخ (3).jpg" alt="">
+						<div class="caption">
+							<h3>طبخ</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Cooking show">
+						<img src="./img/طبخ/طبخ (4).jpg" alt="">
+						<div class="caption">
+							<h3>طبخ</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Cooking show">
+						<img src="./img/طبخ/طبخ (5).jpg" alt="">
+						<div class="caption">
+							<h3>طبخ</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Cooking show">
+						<img src="./img/طبخ/طبخ (2).jpg" alt="">
+						<div class="caption">
+							<h3>طبخ</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Cooking show">
+						<img src="./img/طبخ/نشــاط الطبخ للمرحلة الإعدادية27 - 10 -2016.jpg" alt="">
+						<div class="caption">
+							<h3>نشــاط الطبخ للمرحلة الإعدادية</h3>
+							<p> <q>التاريخ :</q> <span>2026 / 10 / 27</span></p>
+						</div>
+					</div>
+					<div class="img-box Cooking show">
+						<img src="./img/طبخ/طبخ.jpg" alt="">
+						<div class="caption">
+							<h3>طبخ</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box ByHand show">
+						<img src="./img/أعمال يدوية/استخدام الصلصال فى تنمية مهارات الكتابة - مرحلة رياض الأطفال- الفصل الدراسى الأول 2018-2019.jpg"
+							alt="ستخدام الصلصال فى تنمية مهارات الكتابة">
+						<div class="caption">
+							<h3>استخدام الصلصال فى تنمية مهارات الكتابة - مرحلة رياض الأطفال</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box ByHand show">
+						<img src="./img/أعمال يدوية/صور الحل والتركيب ( مرحلة رياض الأطفال )3-11-2016.jpg"
+							alt="صور الحل والتركيب - مرحلة رياض الأطفال">
+						<div class="caption">
+							<h3>صور الحل والتركيب - مرحلة رياض الأطفال</h3>
+							<p> <q>التاريخ :</q> <span>2016 / 11 / 3</span></p>
+						</div>
+					</div>
+					<div class="img-box ByHand show">
+						<img src="./img/أعمال يدوية/عمل البيتزا بمشاركة الأطفال بمرحلة رياض الأطفال الترم الأول 20182019.jpg"
+							alt="عمل البيتزا بمشاركة الأطفال بمرحلة رياض الأطفال">
+						<div class="caption">
+							<h3>عمل البيتزا بمشاركة الأطفال بمرحلة رياض الأطفال</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box ByHand show">
+						<img src="./img/أعمال يدوية/نشاط التربية الفنية والأعمال اليدوية - المرحلة الابتدائية الفصل الدراسى الاول2018-2019.jpg"
+							alt="عمل البيتزا بمشاركة الأطفال بمرحلة رياض الأطفال">
+						<div class="caption">
+							<h3>نشاط التربية الفنية والأعمال اليدوية - المرحلة الابتدائية</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box ByHand show">
+						<img src="./img/أعمال يدوية/نشاط منتسورى مرحلة رياض الأطفال الفصل الدراسى الأول 20182019.jpg"
+							alt="عمل البيتزا بمشاركة الأطفال بمرحلة رياض الأطفال">
+						<div class="caption">
+							<h3>نشاط منتسورى مرحلة رياض الأطفال</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/اليوم الرياضي (بنات وبس) بعنوان (المرأة نصف المجتمع ) 2016.jpg"
+							alt="">
+						<div class="caption">
+							<h3>اليوم الرياضي (بنات وبس) بعنوان (المرأة نصف المجتمع )</h3>
+							<p> <q>التاريخ :</q> <span>2016</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/صور النشاط الحر لرياض الأطفال.jpg " alt="">
+						<div class="caption">
+							<h3>النشاط الحر لرياض الأطفال</h3>
+							<p> <q>التاريخ :</q> <span>2016</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/مهرجان الألوان (اللون الأبيض).jpg" alt="">
+						<div class="caption">
+							<h3>مهرجان الألوان (اللون الأبيض)</h3>
+							<p> <q>التاريخ :</q> <span>2017</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/مهرجان الألوان الأصفر.jpg" alt="">
+						<div class="caption">
+							<h3>مهرجان الألوان الأصفر</h3>
+							<p> <q>التاريخ :</q> <span>2017</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/مهرجان الألوان.jpg" alt="">
+						<div class="caption">
+							<h3>مهرجان الألوان</h3>
+							<p> <q>التاريخ :</q> <span>2017</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/يوم رياضى (2).jpg" alt="">
+						<div class="caption">
+							<h3>يوم رياضى</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/يوم رياضى (3).jpg" alt="">
+						<div class="caption">
+							<h3>يوم رياضى</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/يوم رياضى.jpg" alt="">
+						<div class="caption">
+							<h3>يوم رياضى</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/يوم رياضي كشف المقام داخل المعهد.jpg" alt="">
+						<div class="caption">
+							<h3>يوم رياضي كشف المقام داخل المعهد</h3>
+							<p> <q>التاريخ :</q> <span>2015</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/يوم نشاط حر.jpg" alt="">
+						<div class="caption">
+							<h3>يوم نشاط حر</h3>
+							<p> <q>التاريخ :</q> <span>2015</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/kg/أيام ترفيهية لرياض الأطفال (1).jpg" alt="">
+						<div class="caption">
+							<h3>أيام ترفيهية لرياض الأطفال</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/kg/أيام ترفيهية لرياض الأطفال (2).jpg" alt="">
+						<div class="caption">
+							<h3>أيام ترفيهية لرياض الأطفال</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/kg/أيام ترفيهية لرياض الأطفال (3).jpg" alt="">
+						<div class="caption">
+							<h3>أيام ترفيهية لرياض الأطفال</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/kg/أيام ترفيهية لرياض الأطفال (4).jpg" alt="">
+						<div class="caption">
+							<h3>أيام ترفيهية لرياض الأطفال</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box sportDay show">
+						<img src="./img/أيام ترفيهية/kg/أيام ترفيهية لرياض الأطفال (5).jpg" alt="">
+						<div class="caption">
+							<h3>أيام ترفيهية لرياض الأطفال</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Socity show">
+						<img src="./img/دراسات إجتماعية/نشاط الدراسات الاجتماعية الصف الرابع الابتدائى الفصل الدراسى الاول 2018-2019.jpg"
+							alt="">
+						<div class="caption">
+							<h3>نشاط الدراسات الاجتماعية الصف الرابع الابتدائى</h3>
+							<p> <q>التاريخ :</q> <span>2018</span></p>
+						</div>
+					</div>
+					<div class="img-box Football show">
+						<img src="./img/كرة قدم/تصفيات كاس دورى ابتدائى.jpg" alt="">
+						<div class="caption">
+							<h3>تصفيات كاس دورى ابتدائي</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Sience show">
+						<img src="./img/img-Al Seraj/علؤم.jpg" alt="">
+						<div class="caption">
+							<h3>علوم</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+					<div class="img-box Farma show">
+						<img src="./img/img-Al Seraj/زراعة.jpg" alt="">
+						<div class="caption">
+							<h3>زراعة</h3>
+							<p> <q>التاريخ :</q> <span>2019</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="Show-Button f-c-c w-100">
+					<a href="#THE-END-IMG">
+						<div>صور أكثر</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Start Gallary  -->
+		<script src="./js/bootstrap.bundle.min.js"></script>
+		<script src="./js/masterGallery.js"></script>
+	</body>
+
+</html>

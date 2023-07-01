@@ -1,0 +1,2703 @@
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+    <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+    <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+  </ul>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
+<button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
+<button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle button</button>
+
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-primary">Left</button>
+  <button type="button" class="btn btn-primary">Middle</button>
+  <button type="button" class="btn btn-primary">Right</button>
+</div>
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<button type="button" class="btn-close" aria-label="Close"></button>
+
+<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Button with data-bs-target
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>
+
+<div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Vertically centered modal -->
+<div class="modal-dialog modal-dialog-centered">
+  ...
+</div>
+
+<!-- Vertically centered scrollable modal -->
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  ...
+</div>
+
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  Link with href
+</a>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  Button with data-bs-target
+</button>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Try scrolling the rest of the page to see this option in action.</p>
+  </div>
+</div>
+
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Try scrolling the rest of the page to see this option in action.</p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="..." class="card-img-top" alt="...">
+
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="card" aria-hidden="true">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title placeholder-glow">
+      <span class="placeholder col-6"></span>
+    </h5>
+    <p class="card-text placeholder-glow">
+      <span class="placeholder col-7"></span>
+      <span class="placeholder col-4"></span>
+      <span class="placeholder col-4"></span>
+      <span class="placeholder col-6"></span>
+      <span class="placeholder col-8"></span>
+    </p>
+    <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="Default striped example" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Success striped example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-label="Info striped example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-label="Warning striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-label="Danger striped example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+
+<div class="row">
+  <div class="col-4">
+    <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link" href="#item-1">Item 1</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+          <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+        </nav>
+        <a class="nav-link" href="#item-2">Item 2</a>
+        <a class="nav-link" href="#item-3">Item 3</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+          <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+        </nav>
+      </nav>
+    </nav>
+  </div>
+
+  <div class="col-8">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+      <div id="item-1">
+        <h4>Item 1</h4>
+        <p>...</p>
+      </div>
+      <div id="item-1-1">
+        <h5>Item 1-1</h5>
+        <p>...</p>
+      </div>
+      <div id="item-1-2">
+        <h5>Item 1-2</h5>
+        <p>...</p>
+      </div>
+      <div id="item-2">
+        <h4>Item 2</h4>
+        <p>...</p>
+      </div>
+      <div id="item-3">
+        <h4>Item 3</h4>
+        <p>...</p>
+      </div>
+      <div id="item-3-1">
+        <h5>Item 3-1</h5>
+        <p>...</p>
+      </div>
+      <div id="item-3-2">
+        <h5>Item 3-2</h5>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Home</li>
+  </ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+  </ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+</div>
+
+<div class="ratio ratio-1x1">
+  <div>1x1</div>
+</div>
+<div class="ratio ratio-4x3">
+  <div>4x3</div>
+</div>
+<div class="ratio ratio-16x9">
+  <div>16x9</div>
+</div>
+<div class="ratio ratio-21x9">
+  <div>21x9</div>
+</div>
+
+<img src="..." class="img-fluid" alt="...">
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<select class="form-select" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+<div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email address</label>
+</div>
+<div class="form-floating">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+</div>
+
+
+
+<div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+<button type="button" class="btn btn-primary position-relative">
+  Inbox
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    99+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+
+<button type="button" class="btn btn-primary position-relative">
+  Profile
+  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+    <span class="visually-hidden">New alerts</span>
+  </span>
+</button>
+
+
+<div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div>
+
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="..." class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Primary card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+<div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Secondary card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+<div class="card text-bg-success mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Success card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+<div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Danger card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+<div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Warning card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+<div class="card text-bg-info mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Info card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+<div class="card text-bg-light mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Light card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+<div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Dark card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+<button type="button" class="btn-close" aria-label="Close"></button>
+
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    Toggle width collapse
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 300px;">
+      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+    </div>
+  </div>
+</div>
+
+<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+</p>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Example single danger button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Action
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<!-- Example split danger button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<div class="dropdown-menu">
+  <form class="px-4 py-3">
+    <div class="mb-3">
+      <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+        <label class="form-check-label" for="dropdownCheck">
+          Remember me
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+  <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">New around here? Sign up</a>
+  <a class="dropdown-item" href="#">Forgot password?</a>
+</div>
+
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+    Dropdown form
+  </button>
+  <form class="dropdown-menu p-4">
+    <div class="mb-3">
+      <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+        <label class="form-check-label" for="dropdownCheck2">
+          Remember me
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+</div>
+
+
+<ol class="list-group list-group-numbered">
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Subheading</div>
+      Content for list item
+    </div>
+    <span class="badge bg-primary rounded-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Subheading</div>
+      Content for list item
+    </div>
+    <span class="badge bg-primary rounded-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Subheading</div>
+      Content for list item
+    </div>
+    <span class="badge bg-primary rounded-pill">14</span>
+  </li>
+</ol>
+
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A list item
+    <span class="badge bg-primary rounded-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A second list item
+    <span class="badge bg-primary rounded-pill">2</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A third list item
+    <span class="badge bg-primary rounded-pill">1</span>
+  </li>
+</ul>
+
+
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small>3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small>And some small print.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small class="text-muted">And some muted small print.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small class="text-muted">And some muted small print.</small>
+  </a>
+</div>
+
+$transition-collapse:         height .35s ease;
+$transition-collapse-width:   width .35s ease;
+
+$carousel-control-color:             $white;
+$carousel-control-width:             15%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .15s ease;
+
+$carousel-indicator-width:           30px;
+$carousel-indicator-height:          3px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer:          3px;
+$carousel-indicator-opacity:         .5;
+$carousel-indicator-active-bg:       $white;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity .6s ease;
+
+$carousel-caption-width:             70%;
+$carousel-caption-color:             $white;
+$carousel-caption-padding-y:         1.25rem;
+$carousel-caption-spacer:            1.25rem;
+
+$carousel-control-icon-width:        2rem;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+
+$carousel-transition-duration:       .6s;
+$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+$carousel-dark-indicator-active-bg:  $black;
+$carousel-dark-caption-color:        $black;
+$carousel-dark-control-icon-filter:  invert(1) grayscale(100);
+
+$progress-height:                   1rem;
+$progress-font-size:                $font-size-base * .75;
+$progress-bg:                       $gray-200;
+$progress-border-radius:            $border-radius;
+$progress-box-shadow:               $box-shadow-inset;
+$progress-bar-color:                $white;
+$progress-bar-bg:                   $primary;
+$progress-bar-animation-timing:     1s linear infinite;
+$progress-bar-transition:           width .6s ease;
+
+
+$toast-max-width:                   350px;
+$toast-padding-x:                   .75rem;
+$toast-padding-y:                   .5rem;
+$toast-font-size:                   .875rem;
+$toast-color:                       null;
+$toast-background-color:            rgba($white, .85);
+$toast-border-width:                $border-width;
+$toast-border-color:                var(--#{$prefix}border-color-translucent);
+$toast-border-radius:               $border-radius;
+$toast-box-shadow:                  $box-shadow;
+$toast-spacing:                     $container-padding-x;
+
+$toast-header-color:                $gray-600;
+$toast-header-background-color:     rgba($white, .85);
+$toast-header-border-color:         rgba($black, .05);
+
+$accordion-padding-y:                     1rem;
+$accordion-padding-x:                     1.25rem;
+$accordion-color:                         var(--#{$prefix}body-color);
+$accordion-bg:                            $body-bg;
+$accordion-border-width:                  $border-width;
+$accordion-border-color:                  var(--#{$prefix}border-color);
+$accordion-border-radius:                 $border-radius;
+$accordion-inner-border-radius:           subtract($accordion-border-radius, $accordion-border-width);
+
+$accordion-body-padding-y:                $accordion-padding-y;
+$accordion-body-padding-x:                $accordion-padding-x;
+
+$accordion-button-padding-y:              $accordion-padding-y;
+$accordion-button-padding-x:              $accordion-padding-x;
+$accordion-button-color:                  $accordion-color;
+$accordion-button-bg:                     var(--#{$prefix}accordion-bg);
+$accordion-transition:                    $btn-transition, border-radius .15s ease;
+$accordion-button-active-bg:              tint-color($component-active-bg, 90%);
+$accordion-button-active-color:           shade-color($primary, 10%);
+
+$accordion-button-focus-border-color:     $input-focus-border-color;
+$accordion-button-focus-box-shadow:       $btn-focus-box-shadow;
+
+$accordion-icon-width:                    1.25rem;
+$accordion-icon-color:                    $accordion-button-color;
+$accordion-icon-active-color:             $accordion-button-active-color;
+$accordion-icon-transition:               transform .2s ease-in-out;
+$accordion-icon-transform:                rotate(-180deg);
+
+$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+
+$alert-padding-y:               $spacer;
+$alert-padding-x:               $spacer;
+$alert-margin-bottom:           1rem;
+$alert-border-radius:           $border-radius;
+$alert-link-font-weight:        $font-weight-bold;
+$alert-border-width:            $border-width;
+$alert-bg-scale:                -80%;
+$alert-border-scale:            -70%;
+$alert-color-scale:             40%;
+$alert-dismissible-padding-r:   $alert-padding-x * 3; // 3x covers width of x plus default padding on either side
+
+$badge-font-size:                   .75em;
+$badge-font-weight:                 $font-weight-bold;
+$badge-color:                       $white;
+$badge-padding-y:                   .35em;
+$badge-padding-x:                   .65em;
+$badge-border-radius:               $border-radius;
+
+$breadcrumb-font-size:              null;
+$breadcrumb-padding-y:              0;
+$breadcrumb-padding-x:              0;
+$breadcrumb-item-padding-x:         .5rem;
+$breadcrumb-margin-bottom:          1rem;
+$breadcrumb-bg:                     null;
+$breadcrumb-divider-color:          $gray-600;
+$breadcrumb-active-color:           $gray-600;
+$breadcrumb-divider:                quote("/");
+$breadcrumb-divider-flipped:        $breadcrumb-divider;
+$breadcrumb-border-radius:          null;
+$card-spacer-y:                     $spacer;
+$card-spacer-x:                     $spacer;
+$card-title-spacer-y:               $spacer * .5;
+$card-border-width:                 $border-width;
+$card-border-color:                 var(--#{$prefix}border-color-translucent);
+$card-border-radius:                $border-radius;
+$card-box-shadow:                   null;
+$card-inner-border-radius:          subtract($card-border-radius, $card-border-width);
+$card-cap-padding-y:                $card-spacer-y * .5;
+$card-cap-padding-x:                $card-spacer-x;
+$card-cap-bg:                       rgba($black, .03);
+$card-cap-color:                    null;
+$card-height:                       null;
+$card-color:                        null;
+$card-bg:                           $white;
+$card-img-overlay-padding:          $spacer;
+$card-group-margin:                 $grid-gutter-width * .5;
+
+$carousel-control-color:             $white;
+$carousel-control-width:             15%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .15s ease;
+
+$carousel-indicator-width:           30px;
+$carousel-indicator-height:          3px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer:          3px;
+$carousel-indicator-opacity:         .5;
+$carousel-indicator-active-bg:       $white;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity .6s ease;
+
+$carousel-caption-width:             70%;
+$carousel-caption-color:             $white;
+$carousel-caption-padding-y:         1.25rem;
+$carousel-caption-spacer:            1.25rem;
+
+$carousel-control-icon-width:        2rem;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+
+$carousel-transition-duration:       .6s;
+$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+$carousel-dark-indicator-active-bg:  $black;
+$carousel-dark-caption-color:        $black;
+$carousel-dark-control-icon-filter:  invert(1) grayscale(100);
+$btn-close-width:            1em;
+$btn-close-height:           $btn-close-width;
+$btn-close-padding-x:        .25em;
+$btn-close-padding-y:        $btn-close-padding-x;
+$btn-close-color:            $black;
+$btn-close-bg:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$btn-close-color}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>");
+$btn-close-focus-shadow:     $input-btn-focus-box-shadow;
+$btn-close-opacity:          .5;
+$btn-close-hover-opacity:    .75;
+$btn-close-focus-opacity:    1;
+$btn-close-disabled-opacity: .25;
+$btn-close-white-filter:     invert(1) grayscale(100%) brightness(200%);
+$dropdown-min-width:                10rem;
+$dropdown-padding-x:                0;
+$dropdown-padding-y:                .5rem;
+$dropdown-spacer:                   .125rem;
+$dropdown-font-size:                $font-size-base;
+$dropdown-color:                    $body-color;
+$dropdown-bg:                       $white;
+$dropdown-border-color:             var(--#{$prefix}border-color-translucent);
+$dropdown-border-radius:            $border-radius;
+$dropdown-border-width:             $border-width;
+$dropdown-inner-border-radius:      subtract($dropdown-border-radius, $dropdown-border-width);
+$dropdown-divider-bg:               $dropdown-border-color;
+$dropdown-divider-margin-y:         $spacer * .5;
+$dropdown-box-shadow:               $box-shadow;
+
+$dropdown-link-color:               $gray-900;
+$dropdown-link-hover-color:         shade-color($dropdown-link-color, 10%);
+$dropdown-link-hover-bg:            $gray-200;
+
+$dropdown-link-active-color:        $component-active-color;
+$dropdown-link-active-bg:           $component-active-bg;
+
+$dropdown-link-disabled-color:      $gray-500;
+
+$dropdown-item-padding-y:           $spacer * .25;
+$dropdown-item-padding-x:           $spacer;
+
+$dropdown-header-color:             $gray-600;
+$dropdown-header-padding-x:         $dropdown-item-padding-x;
+$dropdown-header-padding-y:         $dropdown-padding-y;
+// fusv-disable
+$dropdown-header-padding:           $dropdown-header-padding-y $dropdown-header-padding-x; // Deprecated in v5.2.0
+// fusv-enable
+$dropdown-dark-color:               $gray-300;
+$dropdown-dark-bg:                  $gray-800;
+$dropdown-dark-border-color:        $dropdown-border-color;
+$dropdown-dark-divider-bg:          $dropdown-divider-bg;
+$dropdown-dark-box-shadow:          null;
+$dropdown-dark-link-color:          $dropdown-dark-color;
+$dropdown-dark-link-hover-color:    $white;
+$dropdown-dark-link-hover-bg:       rgba($white, .15);
+$dropdown-dark-link-active-color:   $dropdown-link-active-color;
+$dropdown-dark-link-active-bg:      $dropdown-link-active-bg;
+$dropdown-dark-link-disabled-color: $gray-500;
+$dropdown-dark-header-color:        $gray-500;
+$caret-width:                 .3em;
+$caret-vertical-align:        $caret-width * .85;
+$caret-spacing:               $caret-width * .85;
+$list-group-color:                  $gray-900;
+$list-group-bg:                     $white;
+$list-group-border-color:           rgba($black, .125);
+$list-group-border-width:           $border-width;
+$list-group-border-radius:          $border-radius;
+
+$list-group-item-padding-y:         $spacer * .5;
+$list-group-item-padding-x:         $spacer;
+$list-group-item-bg-scale:          -80%;
+$list-group-item-color-scale:       40%;
+
+$list-group-hover-bg:               $gray-100;
+$list-group-active-color:           $component-active-color;
+$list-group-active-bg:              $component-active-bg;
+$list-group-active-border-color:    $list-group-active-bg;
+
+$list-group-disabled-color:         $gray-600;
+$list-group-disabled-bg:            $list-group-bg;
+
+$list-group-action-color:           $gray-700;
+$list-group-action-hover-color:     $list-group-action-color;
+
+$list-group-action-active-color:    $body-color;
+$list-group-action-active-bg:       $gray-200;
+$modal-inner-padding:               $spacer;
+
+$modal-footer-margin-between:       .5rem;
+
+$modal-dialog-margin:               .5rem;
+$modal-dialog-margin-y-sm-up:       1.75rem;
+
+$modal-title-line-height:           $line-height-base;
+
+$modal-content-color:               null;
+$modal-content-bg:                  $white;
+$modal-content-border-color:        var(--#{$prefix}border-color-translucent);
+$modal-content-border-width:        $border-width;
+$modal-content-border-radius:       $border-radius-lg;
+$modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width);
+$modal-content-box-shadow-xs:       $box-shadow-sm;
+$modal-content-box-shadow-sm-up:    $box-shadow;
+
+$modal-backdrop-bg:                 $black;
+$modal-backdrop-opacity:            .5;
+
+$modal-header-border-color:         var(--#{$prefix}border-color);
+$modal-header-border-width:         $modal-content-border-width;
+$modal-header-padding-y:            $modal-inner-padding;
+$modal-header-padding-x:            $modal-inner-padding;
+$modal-header-padding:              $modal-header-padding-y $modal-header-padding-x; // Keep this for backwards compatibility
+
+$modal-footer-bg:                   null;
+$modal-footer-border-color:         $modal-header-border-color;
+$modal-footer-border-width:         $modal-header-border-width;
+
+$modal-sm:                          300px;
+$modal-md:                          500px;
+$modal-lg:                          800px;
+$modal-xl:                          1140px;
+
+$modal-fade-transform:              translate(0, -50px);
+$modal-show-transform:              none;
+$modal-transition:                  transform .3s ease-out;
+$modal-scale-transform:             scale(1.02);
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  $postfix: if($infix != "", $infix + "-down", "");
+
+  @include media-breakpoint-down($breakpoint) {
+    .modal-fullscreen#{$postfix} {
+      width: 100vw;
+      max-width: none;
+      height: 100%;
+      margin: 0;
+
+      .modal-content {
+        height: 100%;
+        border: 0;
+        @include border-radius(0);
+      }
+
+      .modal-header,
+      .modal-footer {
+        @include border-radius(0);
+      }
+
+      .modal-body {
+        overflow-y: auto;
+      }
+    }
+  }
+}
+$navbar-padding-y:                  $spacer * .5;
+$navbar-padding-x:                  null;
+
+$navbar-nav-link-padding-x:         .5rem;
+
+$navbar-brand-font-size:            $font-size-lg;
+// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
+$nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 2;
+$navbar-brand-height:               $navbar-brand-font-size * $line-height-base;
+$navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) * .5;
+$navbar-brand-margin-end:           1rem;
+
+$navbar-toggler-padding-y:          .25rem;
+$navbar-toggler-padding-x:          .75rem;
+$navbar-toggler-font-size:          $font-size-lg;
+$navbar-toggler-border-radius:      $btn-border-radius;
+$navbar-toggler-focus-width:        $btn-focus-width;
+$navbar-toggler-transition:         box-shadow .15s ease-in-out;
+
+// Generate series of `.navbar-expand-*` responsive classes for configuring
+// where your navbar collapses.
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    // stylelint-disable-next-line scss/selector-no-union-class-name
+    &#{$infix} {
+      @include media-breakpoint-up($next) {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        .navbar-nav {
+          flex-direction: row;
+
+          .dropdown-menu {
+            position: absolute;
+          }
+
+          .nav-link {
+            padding-right: var(--#{$prefix}navbar-nav-link-padding-x);
+            padding-left: var(--#{$prefix}navbar-nav-link-padding-x);
+          }
+        }
+
+        .navbar-nav-scroll {
+          overflow: visible;
+        }
+
+        .navbar-collapse {
+          display: flex !important; // stylelint-disable-line declaration-no-important
+          flex-basis: auto;
+        }
+
+        .navbar-toggler {
+          display: none;
+        }
+
+        .offcanvas {
+          // stylelint-disable declaration-no-important
+          position: static;
+          z-index: auto;
+          flex-grow: 1;
+          width: auto !important;
+          height: auto !important;
+          visibility: visible !important;
+          background-color: transparent !important;
+          border: 0 !important;
+          transform: none !important;
+          @include box-shadow(none);
+          @include transition(none);
+          // stylelint-enable declaration-no-important
+
+          .offcanvas-header {
+            display: none;
+          }
+
+          .offcanvas-body {
+            display: flex;
+            flex-grow: 0;
+            padding: 0;
+            overflow-y: visible;
+          }
+        }
+      }
+    }
+  }
+}
+$offcanvas-padding-y:               $modal-inner-padding;
+$offcanvas-padding-x:               $modal-inner-padding;
+$offcanvas-horizontal-width:        400px;
+$offcanvas-vertical-height:         30vh;
+$offcanvas-transition-duration:     .3s;
+$offcanvas-border-color:            $modal-content-border-color;
+$offcanvas-border-width:            $modal-content-border-width;
+$offcanvas-title-line-height:       $modal-title-line-height;
+$offcanvas-bg-color:                $modal-content-bg;
+$offcanvas-color:                   $modal-content-color;
+$offcanvas-box-shadow:              $modal-content-box-shadow-xs;
+$offcanvas-backdrop-bg:             $modal-backdrop-bg;
+$offcanvas-backdrop-opacity:        $modal-backdrop-opacity;
+$placeholder-opacity-max:           .5;
+$placeholder-opacity-min:           .2;
+$progress-height:                   1rem;
+$progress-font-size:                $font-size-base * .75;
+$progress-bg:                       $gray-200;
+$progress-border-radius:            $border-radius;
+$progress-box-shadow:               $box-shadow-inset;
+$progress-bar-color:                $white;
+$progress-bar-bg:                   $primary;
+$progress-bar-animation-timing:     1s linear infinite;
+$progress-bar-transition:           width .6s ease;
+$toast-max-width:                   350px;
+$toast-padding-x:                   .75rem;
+$toast-padding-y:                   .5rem;
+$toast-font-size:                   .875rem;
+$toast-color:                       null;
+$toast-background-color:            rgba($white, .85);
+$toast-border-width:                $border-width;
+$toast-border-color:                var(--#{$prefix}border-color-translucent);
+$toast-border-radius:               $border-radius;
+$toast-box-shadow:                  $box-shadow;
+$toast-spacing:                     $container-padding-x;
+
+$toast-header-color:                $gray-600;
+$toast-header-background-color:     rgba($white, .85);
+$toast-header-border-color:         rgba($black, .05);
+$tooltip-font-size:                 $font-size-sm;
+$tooltip-max-width:                 200px;
+$tooltip-color:                     $white;
+$tooltip-bg:                        $black;
+$tooltip-border-radius:             $border-radius;
+$tooltip-opacity:                   .9;
+$tooltip-padding-y:                 $spacer * .25;
+$tooltip-padding-x:                 $spacer * .5;
+$tooltip-margin:                    null; // TODO: remove this in v6
+
+$tooltip-arrow-width:               .8rem;
+$tooltip-arrow-height:              .4rem;
+// fusv-disable
+$tooltip-arrow-color:               null; // Deprecated in Bootstrap 5.2.0 for CSS variables
+// fusv-enable
+// Configuration
+@import "functions";
+@import "variables";
+@import "maps";
+@import "mixins";
+@import "utilities";
+
+// Layout & components
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "accordion";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "alert";
+@import "progress";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "offcanvas";
+@import "placeholders";
+
+// Helpers
+@import "helpers";
+
+// Utilities
+@import "utilities/api";
+
+
+$input-padding-y:                       $input-btn-padding-y;
+$input-padding-x:                       $input-btn-padding-x;
+$input-font-family:                     $input-btn-font-family;
+$input-font-size:                       $input-btn-font-size;
+$input-font-weight:                     $font-weight-base;
+$input-line-height:                     $input-btn-line-height;
+
+$input-padding-y-sm:                    $input-btn-padding-y-sm;
+$input-padding-x-sm:                    $input-btn-padding-x-sm;
+$input-font-size-sm:                    $input-btn-font-size-sm;
+
+$input-padding-y-lg:                    $input-btn-padding-y-lg;
+$input-padding-x-lg:                    $input-btn-padding-x-lg;
+$input-font-size-lg:                    $input-btn-font-size-lg;
+
+$input-bg:                              $body-bg;
+$input-disabled-color:                  null;
+$input-disabled-bg:                     $gray-200;
+$input-disabled-border-color:           null;
+
+$input-color:                           $body-color;
+$input-border-color:                    $gray-400;
+$input-border-width:                    $input-btn-border-width;
+$input-box-shadow:                      $box-shadow-inset;
+
+$input-border-radius:                   $border-radius;
+$input-border-radius-sm:                $border-radius-sm;
+$input-border-radius-lg:                $border-radius-lg;
+
+$input-focus-bg:                        $input-bg;
+$input-focus-border-color:              tint-color($component-active-bg, 50%);
+$input-focus-color:                     $input-color;
+$input-focus-width:                     $input-btn-focus-width;
+$input-focus-box-shadow:                $input-btn-focus-box-shadow;
+
+$input-placeholder-color:               $gray-600;
+$input-plaintext-color:                 $body-color;
+
+$input-height-border:                   $input-border-width * 2;
+
+$input-height-inner:                    add($input-line-height * 1em, $input-padding-y * 2);
+$input-height-inner-half:               add($input-line-height * .5em, $input-padding-y);
+$input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y * .5);
+
+$input-height:                          add($input-line-height * 1em, add($input-padding-y * 2, $input-height-border, false));
+$input-height-sm:                       add($input-line-height * 1em, add($input-padding-y-sm * 2, $input-height-border, false));
+$input-height-lg:                       add($input-line-height * 1em, add($input-padding-y-lg * 2, $input-height-border, false));
+
+$input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+$form-color-width:                      3rem;
+
+
+<div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
+
+<div class="mb-3">
+  <label for="formFile" class="form-label">Default file input example</label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+<div class="mb-3">
+  <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+  <input class="form-control" type="file" id="formFileMultiple" multiple>
+</div>
+<div class="mb-3">
+  <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+  <input class="form-control" type="file" id="formFileDisabled" disabled>
+</div>
+<div class="mb-3">
+  <label for="formFileSm" class="form-label">Small file input example</label>
+  <input class="form-control form-control-sm" id="formFileSm" type="file">
+</div>
+<div>
+  <label for="formFileLg" class="form-label">Large file input example</label>
+  <input class="form-control form-control-lg" id="formFileLg" type="file">
+</div>
+
+<label for="exampleColorInput" class="form-label">Color picker</label>
+<input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+
+<label for="exampleDataList" class="form-label">Datalist example</label>
+<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+<datalist id="datalistOptions">
+  <option value="San Francisco">
+  <option value="New York">
+  <option value="Seattle">
+  <option value="Los Angeles">
+  <option value="Chicago">
+</datalist>
+
+
+
+
+
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+  --bs-border-width: 1px;
+  --bs-border-style: solid;
+  --bs-border-color: #dee2e6;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-radius: 0.375rem;
+  --bs-border-radius-sm: 0.25rem;
+  --bs-border-radius-lg: 0.5rem;
+  --bs-border-radius-xl: 1rem;
+  --bs-border-radius-2xl: 2rem;
+  --bs-border-radius-pill: 50rem;
+  --bs-link-color: #0d6efd;
+  --bs-link-hover-color: #0a58ca;
+  --bs-code-color: #d63384;
+  --bs-highlight-bg: #fff3cd;
+}
+  --#{$prefix}tooltip-zindex: #{$zindex-tooltip};
+  --#{$prefix}tooltip-max-width: #{$tooltip-max-width};
+  --#{$prefix}tooltip-padding-x: #{$tooltip-padding-x};
+  --#{$prefix}tooltip-padding-y: #{$tooltip-padding-y};
+  --#{$prefix}tooltip-margin: #{$tooltip-margin};
+  @include rfs($tooltip-font-size, --#{$prefix}tooltip-font-size);
+  --#{$prefix}tooltip-color: #{$tooltip-color};
+  --#{$prefix}tooltip-bg: #{$tooltip-bg};
+  --#{$prefix}tooltip-border-radius: #{$tooltip-border-radius};
+  --#{$prefix}tooltip-opacity: #{$tooltip-opacity};
+  --#{$prefix}tooltip-arrow-width: #{$tooltip-arrow-width};
+  --#{$prefix}tooltip-arrow-height: #{$tooltip-arrow-height};
+  
+  --#{$prefix}toast-padding-x: #{$toast-padding-x};
+  --#{$prefix}toast-padding-y: #{$toast-padding-y};
+  --#{$prefix}toast-spacing: #{$toast-spacing};
+  --#{$prefix}toast-max-width: #{$toast-max-width};
+  @include rfs($toast-font-size, --#{$prefix}toast-font-size);
+  --#{$prefix}toast-color: #{$toast-color};
+  --#{$prefix}toast-bg: #{$toast-background-color};
+  --#{$prefix}toast-border-width: #{$toast-border-width};
+  --#{$prefix}toast-border-color: #{$toast-border-color};
+  --#{$prefix}toast-border-radius: #{$toast-border-radius};
+  --#{$prefix}toast-box-shadow: #{$toast-box-shadow};
+  --#{$prefix}toast-header-color: #{$toast-header-color};
+  --#{$prefix}toast-header-bg: #{$toast-header-background-color};
+  --#{$prefix}toast-header-border-color: #{$toast-header-border-color};
+  
+  --#{$prefix}progress-height: #{$progress-height};
+  @include rfs($progress-font-size, --#{$prefix}progress-font-size);
+  --#{$prefix}progress-bg: #{$progress-bg};
+  --#{$prefix}progress-border-radius: #{$progress-border-radius};
+  --#{$prefix}progress-box-shadow: #{$progress-box-shadow};
+  --#{$prefix}progress-bar-color: #{$progress-bar-color};
+  --#{$prefix}progress-bar-bg: #{$progress-bar-bg};
+  --#{$prefix}progress-bar-transition: #{$progress-bar-transition};
+  
+  --#{$prefix}offcanvas-width: #{$offcanvas-horizontal-width};
+  --#{$prefix}offcanvas-height: #{$offcanvas-vertical-height};
+  --#{$prefix}offcanvas-padding-x: #{$offcanvas-padding-x};
+  --#{$prefix}offcanvas-padding-y: #{$offcanvas-padding-y};
+  --#{$prefix}offcanvas-color: #{$offcanvas-color};
+  --#{$prefix}offcanvas-bg: #{$offcanvas-bg-color};
+  --#{$prefix}offcanvas-border-width: #{$offcanvas-border-width};
+  --#{$prefix}offcanvas-border-color: #{$offcanvas-border-color};
+  --#{$prefix}offcanvas-box-shadow: #{$offcanvas-box-shadow};
+  
+  --#{$prefix}navbar-padding-x: #{if($navbar-padding-x == null, 0, $navbar-padding-x)};
+  --#{$prefix}navbar-padding-y: #{$navbar-padding-y};
+  --#{$prefix}navbar-color: #{$navbar-light-color};
+  --#{$prefix}navbar-hover-color: #{$navbar-light-hover-color};
+  --#{$prefix}navbar-disabled-color: #{$navbar-light-disabled-color};
+  --#{$prefix}navbar-active-color: #{$navbar-light-active-color};
+  --#{$prefix}navbar-brand-padding-y: #{$navbar-brand-padding-y};
+  --#{$prefix}navbar-brand-margin-end: #{$navbar-brand-margin-end};
+  --#{$prefix}navbar-brand-font-size: #{$navbar-brand-font-size};
+  --#{$prefix}navbar-brand-color: #{$navbar-light-brand-color};
+  --#{$prefix}navbar-brand-hover-color: #{$navbar-light-brand-hover-color};
+  --#{$prefix}navbar-nav-link-padding-x: #{$navbar-nav-link-padding-x};
+  --#{$prefix}navbar-toggler-padding-y: #{$navbar-toggler-padding-y};
+  --#{$prefix}navbar-toggler-padding-x: #{$navbar-toggler-padding-x};
+  --#{$prefix}navbar-toggler-font-size: #{$navbar-toggler-font-size};
+  --#{$prefix}navbar-toggler-icon-bg: #{escape-svg($navbar-light-toggler-icon-bg)};
+  --#{$prefix}navbar-toggler-border-color: #{$navbar-light-toggler-border-color};
+  --#{$prefix}navbar-toggler-border-radius: #{$navbar-toggler-border-radius};
+  --#{$prefix}navbar-toggler-focus-width: #{$navbar-toggler-focus-width};
+  --#{$prefix}navbar-toggler-transition: #{$navbar-toggler-transition};
+  
+  --#{$prefix}modal-zindex: #{$zindex-modal};
+  --#{$prefix}modal-width: #{$modal-md};
+  --#{$prefix}modal-padding: #{$modal-inner-padding};
+  --#{$prefix}modal-margin: #{$modal-dialog-margin};
+  --#{$prefix}modal-color: #{$modal-content-color};
+  --#{$prefix}modal-bg: #{$modal-content-bg};
+  --#{$prefix}modal-border-color: #{$modal-content-border-color};
+  --#{$prefix}modal-border-width: #{$modal-content-border-width};
+  --#{$prefix}modal-border-radius: #{$modal-content-border-radius};
+  --#{$prefix}modal-box-shadow: #{$modal-content-box-shadow-xs};
+  --#{$prefix}modal-inner-border-radius: #{$modal-content-inner-border-radius};
+  --#{$prefix}modal-header-padding-x: #{$modal-header-padding-x};
+  --#{$prefix}modal-header-padding-y: #{$modal-header-padding-y};
+  --#{$prefix}modal-header-padding: #{$modal-header-padding}; // Todo in v6: Split this padding into x and y
+  --#{$prefix}modal-header-border-color: #{$modal-header-border-color};
+  --#{$prefix}modal-header-border-width: #{$modal-header-border-width};
+  --#{$prefix}modal-title-line-height: #{$modal-title-line-height};
+  --#{$prefix}modal-footer-gap: #{$modal-footer-margin-between};
+  --#{$prefix}modal-footer-bg: #{$modal-footer-bg};
+  --#{$prefix}modal-footer-border-color: #{$modal-footer-border-color};
+  --#{$prefix}modal-footer-border-width: #{$modal-footer-border-width};
+  
+  --#{$prefix}list-group-color: #{$list-group-color};
+  --#{$prefix}list-group-bg: #{$list-group-bg};
+  --#{$prefix}list-group-border-color: #{$list-group-border-color};
+  --#{$prefix}list-group-border-width: #{$list-group-border-width};
+  --#{$prefix}list-group-border-radius: #{$list-group-border-radius};
+  --#{$prefix}list-group-item-padding-x: #{$list-group-item-padding-x};
+  --#{$prefix}list-group-item-padding-y: #{$list-group-item-padding-y};
+  --#{$prefix}list-group-action-color: #{$list-group-action-color};
+  --#{$prefix}list-group-action-hover-color: #{$list-group-action-hover-color};
+  --#{$prefix}list-group-action-hover-bg: #{$list-group-hover-bg};
+  --#{$prefix}list-group-action-active-color: #{$list-group-action-active-color};
+  --#{$prefix}list-group-action-active-bg: #{$list-group-action-active-bg};
+  --#{$prefix}list-group-disabled-color: #{$list-group-disabled-color};
+  --#{$prefix}list-group-disabled-bg: #{$list-group-disabled-bg};
+  --#{$prefix}list-group-active-color: #{$list-group-active-color};
+  --#{$prefix}list-group-active-bg: #{$list-group-active-bg};
+  --#{$prefix}list-group-active-border-color: #{$list-group-active-border-color};
+  
+  --#{$prefix}dropdown-min-width: #{$dropdown-min-width};
+  --#{$prefix}dropdown-padding-x: #{$dropdown-padding-x};
+  --#{$prefix}dropdown-padding-y: #{$dropdown-padding-y};
+  --#{$prefix}dropdown-spacer: #{$dropdown-spacer};
+  @include rfs($dropdown-font-size, --#{$prefix}dropdown-font-size);
+  --#{$prefix}dropdown-color: #{$dropdown-color};
+  --#{$prefix}dropdown-bg: #{$dropdown-bg};
+  --#{$prefix}dropdown-border-color: #{$dropdown-border-color};
+  --#{$prefix}dropdown-border-radius: #{$dropdown-border-radius};
+  --#{$prefix}dropdown-border-width: #{$dropdown-border-width};
+  --#{$prefix}dropdown-inner-border-radius: #{$dropdown-inner-border-radius};
+  --#{$prefix}dropdown-divider-bg: #{$dropdown-divider-bg};
+  --#{$prefix}dropdown-divider-margin-y: #{$dropdown-divider-margin-y};
+  --#{$prefix}dropdown-box-shadow: #{$dropdown-box-shadow};
+  --#{$prefix}dropdown-link-color: #{$dropdown-link-color};
+  --#{$prefix}dropdown-link-hover-color: #{$dropdown-link-hover-color};
+  --#{$prefix}dropdown-link-hover-bg: #{$dropdown-link-hover-bg};
+  --#{$prefix}dropdown-link-active-color: #{$dropdown-link-active-color};
+  --#{$prefix}dropdown-link-active-bg: #{$dropdown-link-active-bg};
+  --#{$prefix}dropdown-link-disabled-color: #{$dropdown-link-disabled-color};
+  --#{$prefix}dropdown-item-padding-x: #{$dropdown-item-padding-x};
+  --#{$prefix}dropdown-item-padding-y: #{$dropdown-item-padding-y};
+  --#{$prefix}dropdown-header-color: #{$dropdown-header-color};
+  --#{$prefix}dropdown-header-padding-x: #{$dropdown-header-padding-x};
+  --#{$prefix}dropdown-header-padding-y: #{$dropdown-header-padding-y};
+    --#{$prefix}dropdown-color: #{$dropdown-dark-color};
+  --#{$prefix}dropdown-bg: #{$dropdown-dark-bg};
+  --#{$prefix}dropdown-border-color: #{$dropdown-dark-border-color};
+  --#{$prefix}dropdown-box-shadow: #{$dropdown-dark-box-shadow};
+  --#{$prefix}dropdown-link-color: #{$dropdown-dark-link-color};
+  --#{$prefix}dropdown-link-hover-color: #{$dropdown-dark-link-hover-color};
+  --#{$prefix}dropdown-divider-bg: #{$dropdown-dark-divider-bg};
+  --#{$prefix}dropdown-link-hover-bg: #{$dropdown-dark-link-hover-bg};
+  --#{$prefix}dropdown-link-active-color: #{$dropdown-dark-link-active-color};
+  --#{$prefix}dropdown-link-active-bg: #{$dropdown-dark-link-active-bg};
+  --#{$prefix}dropdown-link-disabled-color: #{$dropdown-dark-link-disabled-color};
+  --#{$prefix}dropdown-header-color: #{$dropdown-dark-header-color};
+  
+
+  --#{$prefix}card-spacer-y: #{$card-spacer-y};
+  --#{$prefix}card-spacer-x: #{$card-spacer-x};
+  --#{$prefix}card-title-spacer-y: #{$card-title-spacer-y};
+  --#{$prefix}card-border-width: #{$card-border-width};
+  --#{$prefix}card-border-color: #{$card-border-color};
+  --#{$prefix}card-border-radius: #{$card-border-radius};
+  --#{$prefix}card-box-shadow: #{$card-box-shadow};
+  --#{$prefix}card-inner-border-radius: #{$card-inner-border-radius};
+  --#{$prefix}card-cap-padding-y: #{$card-cap-padding-y};
+  --#{$prefix}card-cap-padding-x: #{$card-cap-padding-x};
+  --#{$prefix}card-cap-bg: #{$card-cap-bg};
+  --#{$prefix}card-cap-color: #{$card-cap-color};
+  --#{$prefix}card-height: #{$card-height};
+  --#{$prefix}card-color: #{$card-color};
+  --#{$prefix}card-bg: #{$card-bg};
+  --#{$prefix}card-img-overlay-padding: #{$card-img-overlay-padding};
+  --#{$prefix}card-group-margin: #{$card-group-margin};
+  
+
+  --#{$prefix}btn-padding-x: #{$btn-padding-x};
+  --#{$prefix}btn-padding-y: #{$btn-padding-y};
+  --#{$prefix}btn-font-family: #{$btn-font-family};
+  @include rfs($btn-font-size, --#{$prefix}btn-font-size);
+  --#{$prefix}btn-font-weight: #{$btn-font-weight};
+  --#{$prefix}btn-line-height: #{$btn-line-height};
+  --#{$prefix}btn-color: #{$body-color};
+  --#{$prefix}btn-bg: transparent;
+  --#{$prefix}btn-border-width: #{$btn-border-width};
+  --#{$prefix}btn-border-color: transparent;
+  --#{$prefix}btn-border-radius: #{$btn-border-radius};
+  --#{$prefix}btn-box-shadow: #{$btn-box-shadow};
+  --#{$prefix}btn-disabled-opacity: #{$btn-disabled-opacity};
+  --#{$prefix}btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} rgba(var(--#{$prefix}btn-focus-shadow-rgb), .5);
+  
+
+ 
+  --#{$prefix}breadcrumb-padding-x: #{$breadcrumb-padding-x};
+  --#{$prefix}breadcrumb-padding-y: #{$breadcrumb-padding-y};
+  --#{$prefix}breadcrumb-margin-bottom: #{$breadcrumb-margin-bottom};
+  @include rfs($breadcrumb-font-size, --#{$prefix}breadcrumb-font-size);
+  --#{$prefix}breadcrumb-bg: #{$breadcrumb-bg};
+  --#{$prefix}breadcrumb-border-radius: #{$breadcrumb-border-radius};
+  --#{$prefix}breadcrumb-divider-color: #{$breadcrumb-divider-color};
+  --#{$prefix}breadcrumb-item-padding-x: #{$breadcrumb-item-padding-x};
+  --#{$prefix}breadcrumb-item-active-color: #{$breadcrumb-active-color};
+  
+
+  --#{$prefix}badge-padding-x: #{$badge-padding-x};
+  --#{$prefix}badge-padding-y: #{$badge-padding-y};
+  @include rfs($badge-font-size, --#{$prefix}badge-font-size);
+  --#{$prefix}badge-font-weight: #{$badge-font-weight};
+  --#{$prefix}badge-color: #{$badge-color};
+  --#{$prefix}badge-border-radius: #{$badge-border-radius};
+  
+
+  --#{$prefix}alert-bg: transparent;
+  --#{$prefix}alert-padding-x: #{$alert-padding-x};
+  --#{$prefix}alert-padding-y: #{$alert-padding-y};
+  --#{$prefix}alert-margin-bottom: #{$alert-margin-bottom};
+  --#{$prefix}alert-color: inherit;
+  --#{$prefix}alert-border-color: transparent;
+  --#{$prefix}alert-border: #{$alert-border-width} solid var(--#{$prefix}alert-border-color);
+  --#{$prefix}alert-border-radius: #{$alert-border-radius};
+  
+
+  --#{$prefix}accordion-color: #{color-contrast($accordion-bg)};
+  --#{$prefix}accordion-bg: #{$accordion-bg};
+  --#{$prefix}accordion-transition: #{$accordion-transition};
+  --#{$prefix}accordion-border-color: #{$accordion-border-color};
+  --#{$prefix}accordion-border-width: #{$accordion-border-width};
+  --#{$prefix}accordion-border-radius: #{$accordion-border-radius};
+  --#{$prefix}accordion-inner-border-radius: #{$accordion-inner-border-radius};
+  --#{$prefix}accordion-btn-padding-x: #{$accordion-button-padding-x};
+  --#{$prefix}accordion-btn-padding-y: #{$accordion-button-padding-y};
+  --#{$prefix}accordion-btn-color: #{$accordion-color};
+  --#{$prefix}accordion-btn-bg: #{$accordion-button-bg};
+  --#{$prefix}accordion-btn-icon: #{escape-svg($accordion-button-icon)};
+  --#{$prefix}accordion-btn-icon-width: #{$accordion-icon-width};
+  --#{$prefix}accordion-btn-icon-transform: #{$accordion-icon-transform};
+  --#{$prefix}accordion-btn-icon-transition: #{$accordion-icon-transition};
+  --#{$prefix}accordion-btn-active-icon: #{escape-svg($accordion-button-active-icon)};
+  --#{$prefix}accordion-btn-focus-border-color: #{$accordion-button-focus-border-color};
+  --#{$prefix}accordion-btn-focus-box-shadow: #{$accordion-button-focus-box-shadow};
+  --#{$prefix}accordion-body-padding-x: #{$accordion-body-padding-x};
+  --#{$prefix}accordion-body-padding-y: #{$accordion-body-padding-y};
+  --#{$prefix}accordion-active-color: #{$accordion-button-active-color};
+  --#{$prefix}accordion-active-bg: #{$accordion-button-active-bg};
+  
+
+  --#{$prefix}toast-padding-x: #{$toast-padding-x};
+  --#{$prefix}toast-padding-y: #{$toast-padding-y};
+  --#{$prefix}toast-spacing: #{$toast-spacing};
+  --#{$prefix}toast-max-width: #{$toast-max-width};
+  @include rfs($toast-font-size, --#{$prefix}toast-font-size);
+  --#{$prefix}toast-color: #{$toast-color};
+  --#{$prefix}toast-bg: #{$toast-background-color};
+  --#{$prefix}toast-border-width: #{$toast-border-width};
+  --#{$prefix}toast-border-color: #{$toast-border-color};
+  --#{$prefix}toast-border-radius: #{$toast-border-radius};
+  --#{$prefix}toast-box-shadow: #{$toast-box-shadow};
+  --#{$prefix}toast-header-color: #{$toast-header-color};
+  --#{$prefix}toast-header-bg: #{$toast-header-background-color};
+  --#{$prefix}toast-header-border-color: #{$toast-header-border-color};
+  
+
+  --#{$prefix}progress-height: #{$progress-height};
+  @include rfs($progress-font-size, --#{$prefix}progress-font-size);
+  --#{$prefix}progress-bg: #{$progress-bg};
+  --#{$prefix}progress-border-radius: #{$progress-border-radius};
+  --#{$prefix}progress-box-shadow: #{$progress-box-shadow};
+  --#{$prefix}progress-bar-color: #{$progress-bar-color};
+  --#{$prefix}progress-bar-bg: #{$progress-bar-bg};
+  --#{$prefix}progress-bar-transition: #{$progress-bar-transition};
+  
+
+
+
+
+
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <div class="container-toUp mb-5">
+          <h5 >معهد السراج المنيرالأزهري الخاص</h5>
+          <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-title box-Togell" id="offcanvasExampleLabel" >
+          <div class="contain">
+            <div class="head">
+              <div class="con">
+                <div class="o active">o</div>
+                <div class="name">الصفحة الرئيسية</div>
+              </div>
+            </div>
+  
+            <div class="head">
+              <div class="con">
+                <div class="o">o</div>
+                <div class="name">عن المعهد</div>
+                <i class="fas fa-angle-left"></i>
+              </div>
+              <ul class="body">
+                <li></li>
+              </ul>
+            </div>
+            <div class="head">
+              <div class="con">
+                <div class="o">o</div>
+                <div class="name">النظام التعليمي</div>
+                <i class="fas fa-angle-left"></i>
+              </div>
+              <ul class="body">
+                <li>جدول الفصل</li>
+                <li>نتائج الإمتحانات</li>
+                <li>جدوال الإمتحانات</li>
+                <li>الخطة الدراسية</li>
+                <li>مسابقات</li>
+                <li>المراجعات</li>
+                <li>الأرقام القياسية الخاصة بالمعهد</li>
+                <li>فيديوهات تعليمية</li>
+                <li>العاب تعليمية</li>
+              </ul>
+            </div>
+            <div class="head">
+              <div class="con">
+                <div class="o">o</div>
+                <div class="name">الأنشطة</div>
+                <i class="fas fa-angle-left"></i>
+              </div>
+              <ul class="body">
+                <li></li>
+              </ul>
+            </div>
+            <div class="head">
+              <div class="con">
+                <div class="o">o</div>
+                <div class="name">وظائف خالية</div>
+                <i class="fas fa-angle-left"></i>
+              </div>
+              <ul class="body">
+                <li></li>
+              </ul>
+            </div>
+            <div class="head">
+              <div class="con">
+                <div class="o">o</div>
+                <div class="name">أسئلة شائعة</div>
+                <i class="fas fa-angle-left"></i>
+              </div>
+              <ul class="body">
+                <li></li>
+              </ul>
+            </div>
+            <div class="head">
+              <div class="con">
+                <div class="o">o</div>
+                <div class="name">تواصل معنا</div>
+                <i class="fas fa-angle-left"></i>
+              </div>
+              <ul class="body">
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+                <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">رسالةالمعهد</a></li>
+              <li><a class="dropdown-item" href="#">تاريخ المعهد</a></li>
+              <li><a class="dropdown-item" href="#">شروط الإلتحاق و التحويل</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="one">
+    <button class="toggel-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav>
+      <span class="close">
+
+        <div>X</div>
+      </span>
+      <div class="container">
+        <div class="link">Home</div>
+        <div class="link">About Us</div>
+        <div class="link">Services</div>
+        <div class="link">Contact Us</div>
+      </div>
+    </nav>
+
+  </section>
+
+  <section class="two">
+    section Two
+  </section>
+
+  <section class="four">
+    <div class="nms">
+      <div class="nm" data-goal="160">0</div>
+      <div class="nm" data-goal="220">0</div>
+      <div class="nm" data-goal="100">0</div>
+      <div class="nm"data-goal="190">0</div>
+    </div>
+  </section>
+  <section class="three">
+    section Three
+  </section>
+  <div class="hrone" ></div>
+  <div class="feat">
+    <div class="back"></div>
+    <div class="box">
+      <div class="img"><img src="./img/J0382955.JPG" alt=""></div>
+      <h3>Card Title</h3>
+      <p>Lorem ametres facere dolorum.</p>
+    </div>
+  </div>
+  <div class="hrone" ></div>
+  <div class="icon-hover">
+    <div class="icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="hrone" ></div>
+  <div class="production">
+    <div class="product">
+      <h2 class="title">
+        Product Title
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. tate doloremque, ipsam omnis suscipit? Fugiat, quod!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. tate doloremque, ipsam omnis suscipit? Fugiat, quod!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. tate doloremque, ipsam omnis suscipit? Fugiat, quod!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. tate doloremque, ipsam omnis suscipit? Fugiat, quod!
+      </p>
+    </div>
+  </div>
+  <div class="hrone" ></div>
+  <div class="clip-path">
+    <div class="bord">
+      <div class="c1 cc"></div>
+      <div class="c2 cc"></div>
+      <div class="c3 cc"></div>
+    </div>
+    <div class="bord">
+      <div class="t1 cc"></div>
+    </div>
+  </div>
+  <div class="hrone" ></div>
+  <div class="body">
+    <div class="name">Color Name :</div>
+    <div class="The-Color">#876a0</div>
+    <div class="back-ground-Color"></div>
+    <div class="Rondom">Rondom</div>
+  </div>
+  <div class="hrone" ></div>
+
+
+
+
+
+
+
+
+
+
+
+  css 
+  .navbar-expand-lg .navbar-collapse {
+    direction: rtl;
+}
+
+.logo {
+    margin: 0;
+}
+
+.logo img {
+    margin: 0;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.toggel-menu {
+    background: transparent;
+    border: none !important;
+    width: 55px;
+    cursor: pointer;
+    text-align: right !important;
+    display: block !important;
+    position: relative;
+    /* margin: 20px; */
+    background: #eee;
+    padding: 6px;
+    width: 41px;
+    border-radius: 4px;
+}
+
+.toggel-menu span {
+    height: 4px;
+    background-color: rgb(143 138 138);
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
+
+.toggel-menu span:last-child {
+    margin-bottom: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Calibri, sans-serif !important;
+    background-color: #eee ;
+    z-index: 1000 !important;
+}
+
+/* Star Header  */
+
+/* {
+    padding: 37px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+} */
+.container-toUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.offcanvas-header {
+    flex-wrap: wrap;
+}
+
+section{
+    height: 68vh;
+    background-color: #ccc;
+    padding: 25px;
+    color: #FFF;
+}
+section .nms {
+    display: flex;
+    justify-content: space-around;
+}
+section .nms .nm {
+    width: 100px;
+    height: 90px;
+    background-color: #fff;
+    color: black;
+    font-size: 29px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.box-Togell button {
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    position: absolute;
+    right: -44px;
+    top: 26px;
+
+}
+
+.box-Togell button span {
+    height: 4px;
+    background: #222;
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+.box-Togell button span:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+nav {
+    transition: 0.5s;
+    transform: translateY(-100%);
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    color: black;
+}
+
+nav.open{
+    transform: translateY(0);
+
+}
+
+nav .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 34px;
+    line-height: 4.5;
+    font-weight: bold;
+}
+
+nav .container div {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+nav .container div:hover {
+    background: rgb(143 138 138);
+    color: #fff;
+}
+
+nav .close {
+    display: flex;
+    text-align: right;
+    padding: 23px 30px;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: right;
+}
+
+nav .close div {
+    padding: 1px 12px;
+    border: 2px solid rgb(143 138 138);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .close div:hover {
+    color: #FFF;
+}
+
+nav .close div::before {
+    transition: var(--main-transition);
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgb(143 138 138);
+    z-index: -1;
+    top: 0;
+    transform: translateY(45deg);
+
+}
+nav .close div:hover::before {
+    height: 100%;
+}
+
+
+
+
+.box-Togell {
+    /* position: relative;
+    top: 0;
+    left: -200px; */
+    background: #40464a;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    color: #fff;
+    z-index: 4;
+    transition: var(--main-transition);
+}
+
+.box-Togell.open {
+    left: 0;
+}
+
+/* .box-Togell .box-Togell h3 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 30px 30px;
+} */
+
+.box-Togell .contain {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-Togell .contain .head {
+    display: flex;
+    flex-wrap: wrap;
+    direction: rtl;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box-Togell .contain .head .body {
+    list-style: none;
+    padding: 0 20px 0 0;
+    line-height: 1.3;
+    display: none;
+}
+
+.box-Togell .contain .head .body.open {
+    display: block;
+}
+
+.box-Togell .contain .head .body li {
+    transition: var(--main-transition);
+}
+
+.box-Togell .contain .head .body li:hover {
+    color: gold;
+}
+
+.box-Togell .contain .head .con {
+    display: flex;
+    gap: 90px;
+    font-size: 17px;
+}
+
+.box-Togell .contain .head .con .name {
+    width: 117px;
+}
+
+.box-Togell .contain .head .con .o.active {
+    color: gold;
+}
+
+.box-Togell .contain .head i {
+    transition: var(--main-transition);
+}
+
+.box-Togell .contain .head:hover .con .o {
+    color: gold;
+}
+
+.box-Togell .contain .head svg {
+    transition: var(--main-transition);
+}
+
+.box-Togell .contain .head:hover svg {
+    color: gold;
+    transform: rotate(-90deg);
+}
+
+/* End Header  */
+/* Start Landing  */
+.Landing {
+    width: 100%;
+    height: 100vh;
+    background: #eee;
+}
+
+/* End Landing  */
+
+
+
+/* Strat Feat */
+.feat{
+    height: 100vh;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.feat .back{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #0088ff;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+}
+.feat .back::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 50%;
+    border-radius: 10% 0 49% 0%;
+    transform: translateY(-200px);
+    transform: translateY(-47px);
+    /* animation-duration: 5s;
+    animation-name: translate ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear ; */
+    animation: translate 10s cubic-bezier(0.98, 0.93, 0,-0.01) infinite alternate ;
+}
+@keyframes  translate {
+    0%{
+        transform: translateY(-17px);   
+        }
+        50%{
+        transform: translateY(-73px);
+    
+        }
+        75%{
+        transform: translateY(-103px);
+    
+        }
+        100%{
+        transform: translateY(-47px);
+    
+        }
+
+}
+.feat .box{
+    z-index: 2;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 316px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    /* border: 2px solid #eee; */
+    border-radius: 4px;
+    box-shadow: 0 0 10px #ddd inset;
+    cursor: pointer;
+}
+.feat .box h3 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+.feat .box .img {
+    background-color: #0088ff;
+}
+.feat .box .img img{
+    width: 100%;
+    border-radius: 19%;
+}
+/* End Feat */
+/* Start icon-hover  */
+.icon-hover{
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-hover .icon {
+    cursor: pointer;
+    position: relative;
+}
+.icon-hover .icon span{
+    width: 300px;
+    background-color: #333;
+    height: 40px;
+    margin-bottom: 20px;
+    display: block;
+    transition: 0.3s;
+}
+.icon-hover .icon:hover span:first-child{
+    transform: translateY(150%) rotate(45deg);
+    background: red;
+}
+.icon-hover .icon span.crouse:first-child{
+    transform: translateY(150%) rotate(45deg);
+    background: red;
+}
+.icon-hover .icon:hover span:nth-child(2){
+    opacity: 0;
+}
+.icon-hover .icon span.crouse:nth-child(2){
+    opacity: 0;
+}
+.icon-hover .icon span:last-child{
+    margin-bottom: 0px;
+}
+.icon-hover .icon:hover span:last-child{
+    transform: translateY(-150%) rotate(-45deg);
+    background: red;
+}
+.icon-hover .icon span.crouse:last-child{
+    transform: translateY(-150%) rotate(-45deg);
+    background: red;
+}
+/* End icon-hover  */
+/* Start production */
+.hrone{
+    width: 100%;
+    height: 6px !important;
+    background-color: #eee !important;
+    margin: 0 !important;
+    z-index: 3 !important;
+}
+.production{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.production .product {
+    width: 700px;
+    background: #eee;
+    padding: 60px 30px 30px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.production .product .title {
+    position: relative;
+    background-color: #0088ff;
+    padding: 20px;
+    width: calc(100% + 120px);
+    color: #fff;
+}
+.production .product .title::before {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #0371d1 #0371d1 transparent transparent;
+}
+.production .product .title::after {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-color:transparent transparent #0371d1 #0371d1 ;
+}
+.production .product .title::after {
+    content: '';
+    
+}
+.production .product p {
+    padding: 30px;
+    text-align: center;
+    line-height: 1.5;
+}
+/* End production */
+/* Start clip-path */
+.clip-path{
+    gap: 20px;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.clip-path .bord{
+    height: 500px;
+    width: 500px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+.clip-path .bord .cc{
+    height: 480px;
+    width: 480px;
+    position: absolute;
+}
+.clip-path .bord .c1{
+    background-image: url(../img/img4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: red;
+    clip-path: polygon(20% 0 , 0 20% ,30% 50%, 0 80% ,20% 100% , 50% 70% , 80% 100% , 100% 80%,  70% 50%, 100% 20%   ,  80% 0% , 50% 30%    );
+}
+.clip-path .bord .t1{
+    position: relative;
+}
+.clip-path .bord .t1::before{
+    background-image: url(../img/img4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    /* background: transparent; */
+    transform: translateY(413%) rotateZ(45deg);
+}
+.clip-path .bord .t1::after{
+    background-image: url(../img/img4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    /* background: transparent; */
+    transform: translateY(413%) rotateZ(-45deg);
+}
+/* End clip-path */
+/* Sart body */
+.special{
+    margin-top: 10px;
+    background: #0088ff;
+    padding: 5px;
+    border-radius: 6px;
+    color: #FFF;
+    width: 742px;
+}
+.body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #Fff;
+    font-size: 50px;
+}
+.body .back-ground-Color{
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    margin-left: 47px;
+    border-radius: 7px;
+}
+.body .Rondom{
+    background-color: red;
+    margin-left: 47px;
+    color: #Fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+/* End body */
+
+
+
+
+
+
+JS 
+
+
+// // Button Open On the Menu
+// let ButtonMenu = document.querySelectorAll(" .box-Togell .contain .head .con");
+// let bodyOPen = document.querySelectorAll(" .box-Togell .contain .head  .body")
+// ButtonMenu.forEach((e, indexLarg) => {
+//     e.onclick = function () {
+
+//         bodyOPen.forEach((e, indexSmall) => {
+//             if (indexLarg - 1 === indexSmall) {
+//                 e.classList.toggle("open")
+//             }
+//         })
+//     }
+
+// })
+
+
+// Button & nav Add class Open
+
+// On click  Close
+let Button = document.querySelector(".toggel-menu");
+let nav = document.querySelector("nav");
+let navContainerDiv = document.querySelectorAll("nav .container div");
+// console.log(navContainerDiv)
+Button.onclick = function () {
+    nav.classList.add("open");
+    navContainerDiv.forEach((div) => {
+        div.onclick = function () {
+            nav.classList.remove("open");
+        }
+    });
+}
+// On click open
+let close = document.querySelector(".close div")
+close.onclick = function () {
+    nav.classList.remove("open");
+}
+document.onkeyup = function (e) {
+    // console.log(e)
+    if (e.key === "Escape") {
+        nav.classList.remove("open");
+    }
+}
+//
+
+// let nms = document.querySelectorAll(".three ");
+// console.log(nms)
+// Numbersclass.forEach((e) => {
+//     e.style.backgroundColor = "#333"
+// })
+
+
+// document.onclick = function (e) {
+//     console.log(e.target)
+// }
+navContainerDiv.forEach((e) => {
+    
+    e.classList.add("mommmmm")
+})
+let nms = document.querySelectorAll(".nms .nm");
+let nmsfour = document.querySelector(".four");
+let Started = false // Function Started ? No
+window.onscroll = function () {
+    if (window.scrollY >= nmsfour.offsetTop -350 ) {
+       if (!Started) {
+        nms.forEach((num) => StartCount(num))
+       }   
+       Started = true ;
+    };
+};
+
+function StartCount(el) {
+    let goal = el.dataset.goal;
+    let count = setInterval(() => {
+        el.textContent++;
+        if ( el.textContent == goal) {
+            clearInterval(count)
+        }
+    }, 1000 / goal)
+}
+//////////
+let crouse = document.querySelector(".icon-hover .icon");
+let spanCrouse = document.querySelectorAll(".icon-hover .icon span")
+crouse.onclick = function () {
+    spanCrouse.forEach((e) => {
+        e.classList.toggle("crouse")
+    })
+}
+
+
+
+
+//////////
+let HexColor = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"];
+let ColorePartes = [];
+for (let i = 0 ; i < 6 ; i++) {
+    ColorePartes.push(HexColor[Math.floor(Math.random() * HexColor.length)])
+}
+let FinalColor = `#${ColorePartes.join("")}`;
+let bodyBackGround = document.querySelector(".body .back-ground-Color");
+let TheColor = document.querySelector(".body .The-Color");
+TheColor.innerHTML = FinalColor
+// document.body.append(FinalColor);
+document.querySelector(".body .back-ground-Color").style.backgroundColor = FinalColor;
+console.log()
+let Rondom = document.querySelector(".body .Rondom");
+Rondom.onclick = function () {
+    window.location.reload()
+}

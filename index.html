@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/normalize.css">
+    <link rel="stylesheet" href="./Css/fontawesome.css">
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/master.css">
+    <title>Al-seraj El-moner</title>
+  </head>
+
+  <body>
+    <!-- Start Setting-box  -->
+    <div class="Setting-box">
+      <div class="icon-box">
+        <div class="icon">
+          <i class="fas fa-cog"></i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="option-box">
+          <h3>أختر اللون</h3>
+          <ul class="The-Option">
+            <li class="colors active-color" data-color="#0088ff"></li>
+            <li class="colors" data-color="#E91E63"></li>
+            <li class="colors" data-color="#51c76b"></li>
+            <li class="colors" data-color="#45b09e"></li>
+            <li class="colors" data-color="#d858a3"></li>
+          </ul>
+          <div class="more">
+            <span>المزيد :</span>
+            <input type="color" id="The_color" onblur="All_color()">
+          </div>
+          <!-- <div class="Done">تم</div> -->
+        </div>
+        <div class="option-box">
+          <h3>الثيم</h3>
+          <label>
+            <input class="toggle-checkbox" type="checkbox" checked="">
+            <div class="toggle-switch fas fa-moon"></div>
+          </label>
+        </div>
+        <div class="option-box">
+          <h3>إظهار الإختصارات</h3>
+          <div class="countan f-c-c gap-2">
+            <div class="No">لا</div>
+            <div class="Yes active">نعم</div>
+          </div>
+        </div>
+        <div class="option-box">
+          <h3>حجم الخط</h3>
+          <div class="contain f-c-c justify-content-between">
+            <span onclick="Font_Value_function()" id="font_value--" class="button">-</span>
+            <span id="font_value" class="button">16</span>
+            <span onclick="Font_Value_function()" id="font_value-+" class="button">+</span>
+          </div>
+          <!-- <input type="range" min="14" max="21" name="" id="Input_Range" value="localStorage.getItem('font_value')" -->
+          <!-- onmousemove="Range(this.value)" onchange="Range(this.value)"> -->
+        </div>
+        <button class="Reset-Option">حذف التغييرات</button>
+      </div>
+    </div>
+    <!-- End Setting-box  -->
+    <!-- Start Header  -->
+    <header class="ps-lg-5 ps-md-5 pe-lg-5 pe-md-5 bg-white " id="Home">
+      <div class="container d-flex align-items-center justify-content-between ">
+        <div class=" menu position-relative">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-box justify-content-center ">
+          <div class="contain f-c-c">
+            <a href="#why">
+              <div class="feat"> لماذا معهد السراج المنير الأزهري ؟</div>
+            </a>
+            <a href="#History">
+              <div class="feat">تاريخ المعهد</div>
+            </a>
+            <a href="#Qu">
+              <div class="feat">الأسئلة الشائعة</div>
+            </a>
+            <a href="#Gallary-View">
+              <div class="feat">المعرض</div>
+            </a>
+            <!-- <a href=""> <div class="feat">التقدم بالإلتحاق</div></a> -->
+            <a href="#Job">
+              <div class="feat">وظائف خالية</div>
+            </a>
+            <a href="#Massege">
+              <div class="feat">رسالةالمعهد</div>
+            </a>
+            <a href="#Contact-Us">
+              <div class="feat">تواصل معنا</div>
+            </a>
+          </div>
+        </div>
+        <div class="search ps-3  f-c-c gap-2 position-relative active" dir="rtl">
+          <div class="Search-child"></div>
+          <input onkeyup="SerchType(value)" type="search" placeholder="البحث" class="active">
+          <span class="container-Result">
+            <div class="count"></div>
+            <div class="container"></div>
+          </span>
+        </div>
+        <div class="lang">
+          <a href="#">
+            <div class="active">عربي</div>
+          </a>
+          <a href="#">
+            <div>E</div>
+          </a>
+        </div>
+        <div class="logo">
+          <div class="name">معهد السراج المنير الأزهرى</div>
+          <div class="logo"><img src="./img/img-Al Seraj/logo.jfif" alt=""></div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header  -->
+    <!-- Start backGround-Imge -->
+    <div class="backGround-Imge">
+      <!-- <div class="container-back-ground" style="width: 70%;"> -->
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/school(1).jpg" style="width: 100% !important; min-height: 310.5px;" class="d-block w-100"
+              alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/back-ground/back-ground-all-shcool.jpg" style="width: 100% !important; min-height: 310.5px;"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/بكرة قدم.jpg" style="width: 100% !important; min-height: 310.5px;" class="d-block w-100"
+              alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- <div class="row" style="width: 100%; float: left;">
+      <button>التقديم للإلتحاق</button>
+    </div> -->
+      <!-- </div> -->
+
+      <!-- <div class="events  events-in-back-ground" style="width: 30%;"> -->
+      <!-- <h3 class="text-Align.center">أحدث الأخبار</h3> -->
+      <!-- <div class="event pt-3 pb-3"> -->
+      <!-- <div class="card mb-3" style="max-width: 100%;"> -->
+      <!-- <div class="row g-0"> -->
+      <!-- <div class="col-md-4"> -->
+      <!-- <img src="./img/01.jpg" class="img-fluid rounded-start" alt="..."> -->
+      <!-- </div> -->
+      <!-- <div class="col-md-8"> -->
+      <!-- <div class="card-body"> -->
+      <!-- <h5 class="card-title">بشرى سارة</h5> -->
+      <!-- <p class="card-text">تم فتح قسم ثانوى لغات 2021.</p> -->
+      <!-- <p class="card-text"><small class="text-muted">أخر تعديل منذ 3 دقائق</small></p> -->
+
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- <div class="card mb-3" style="max-width: 100%;"> -->
+      <!-- <div class="row g-0"> -->
+      <!-- <div class="col-md-4"> -->
+      <!-- <img src="./img/img-Al Seraj/حفلات التخرج ؤ الإستقبال.jpg" class="img-fluid rounded-start" alt="..."> -->
+      <!-- </div> -->
+      <!-- <div class="col-md-8"> -->
+      <!-- <div class="card-body"> -->
+      <!-- <h5 class="card-title">تم فتح باب القبول لمرحلة رياض الأطفال والصف الأول الابتدائى</h5> -->
+      <!-- <p class="card-text">تعلن مدارس السراج المنيرالأزهرية -->
+      <!-- عن بدء التقديمات للعام الدراسى ( 2021– 2022) -->
+      <!-- وتقرر أن تكون بداية اختبارات القبول من يوم الأربعاء الموافق 10/ 2 / 2021م.</p> -->
+      <!-- <p class="card-text"><small class="text-muted">أخر تعديل منذ 1 ساعة و 54 دقائق</small></p> -->
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
+    </div>
+    <!-- End backGround-Imge -->
+    <!-- Start Why This School  -->
+    <div class="why f-c-c " id="why">
+      <div class="title" id="Why" data-Name="Why">لماذا معهد السراج المنير ؟</div>
+      <div class="container d-flex ps-5 pe-5 m-0">
+        <div class="con-1 d-flex justify-content-between">
+          <div class="events">
+            <h3 class="title text-Align.center" id="News" data-Name="News">أحدث الأخبار</h3>
+            <div class="event pt-3 pb-3">
+              <div class="card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="./img/ندوات/مسابقةأوائل الطلبة طلاب معهد السراج و معهد الحسن الأزهرى.jpg"
+                      class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">بشرى سارة</h5>
+                      <p class="card-text">تم فتح قسم ثانوى لغات 2021.</p>
+                      <p class="card-text"><small class="text-muted">أخر تعديل منذ 3 دقائق</small></p>
+                      <!--  Last updated 3 mins ago-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="./img/img-Al Seraj/حفلات التخرج ؤ الإستقبال.jpg" class="img-fluid rounded-start"
+                      alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">تم فتح باب القبول لمرحلة رياض الأطفال والصف الأول الابتدائى</h5>
+                      <p class="card-text">تعلن مدارس السراج المنيرالأزهرية
+                        عن بدء التقديمات للعام الدراسى ( 2021– 2022)
+                        وتقرر أن تكون بداية اختبارات القبول من يوم الأربعاء الموافق 10/ 2 / 2021م.</p>
+                      <p class="card-text"><small class="text-muted">أخر تعديل منذ 1 ساعة و 54 دقائق</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="con-2 ">
+
+
+            <div class="The-Start">
+              يهدف معهد السراج المنيرالأزهرى إلى تربية النشء تربية إسلامية شاملة لعقيدته وعقله وجسمه وخلقه يراعى فيها
+              نموه
+              وخصائص كل مرحلة عمرية يمر بها ومن هنا يمكن تحقيق الأهداف العامة للتعليم عموما وللمعهد خاصة :
+            </div>
+            <div class="container-eventes  d-flex justify-content-between gap-2">
+
+              <ul class="results m-0 p-0 d-flex">
+                <li>
+                  1- حفظ كتاب الله وفهمه فهما صحيحا .
+                </li>
+                <li>
+                  2- ترسيخ العقيدة الإسلامية في نفس الطالب وجعلها ضابطه لسلوكه وتصرفاته وتنمية محبة الله وتقواه وخشيته
+                  في
+                  قلبه.
+                </li>
+                <li>
+                  3- تزويد الطالب بالخبرات والمعارف الملائمة لسنة ، حتى يلم بالأصول العامة والمبادئ الأساسية للثقافة
+                  والعلوم
+                  .
+                </li>
+                <li>
+                  4- تشويقه للبحث عن المعرفة وتعويده التأمل والتتبع العلمي .
+                </li>
+                <li>
+                  5- تنمية القدرات العقلية والمهارات المختلفة لدى الطالب وتعهدها بالتوجيه والتهذيب .
+                </li>
+                <li>
+                  6- تربية على الحياة الاجتماعية الإسلامية التي يسودها الإخاء والتعاون وتقدير التبعة وتحمل المسؤلية.
+                </li>
+                <li>
+                  7- تدريبه على خدمة مجتمعه وتنمية روح النصح والإخلاص لوطنه .
+                </li>
+                <li>
+                  8- التعود على الحفاظ والانتفاع بوقته.
+                </li>
+                <li>
+                  9- تقوية وعى الطالب ليعرف بقدر سنه كيف يواجه الإشاعات المضللة والمذاهب الهدامة .
+                </li>
+                <li>
+                  10- علو همته لاستعادة أمجاد الأمة الإسلامية التي ينتمي إليها .
+                </li>
+                <li>
+                  11- إعداده لمواجهة التحديات وما يواجهه من صعوبات في الحياة .
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Why This School  -->
+    <!-- Start History -->
+    <div class="History w-100 f-c-c" id="History">
+      <div class="container f-c-c">
+        <div class="box f-c-c" id="Date">
+          <div data-Name="Date" class="feat position-relative title">
+            تاريخ المعهد
+          </div>
+          <p>
+            تم إنشاء المعهد عام1428 هجرياً 2007 ميلادياً
+            وبدأت الدراسة بالمعهد يوم
+            7 من شعبان سنة 1428 هجرياً * ويوم 20 من سبتمبر سنة 2007 ميلادياً
+            ويقع المعهد فى موقع جغرافى متميز
+            حيث يقع : فى الهضبةالوسطى - الحى الثانى - بالمقطم حيث نقاء الجو والبعد عن الزحام والمصانع وكذلك قربة الشديد
+            جداً من أهم الطرق بالقاهرة . الدائرى - والاتوستراد
+          </p>
+        </div>
+        <div class="box f-c-c" id="Massege">
+          <div id="Top" data-Name="Massege" class="feat position-relative title">
+            رسالةالمعهد
+          </div>
+          <p>
+            بسم الله الرحمن الرحيم
+
+            إن الحمد لله، نحمده ونستعينه ونستغفره، ونعوذ بالله من شرور أنفسنا وسيئات أعمالنا، من يهده الله فلا مضلَّ له،
+            ومن يضلل فلا هادى له، وأشهد أن لا إله إلا الله وحده لا شريك له، وأشهد أن محمدًا عبده ورسوله، اللهم صلِّ على
+            محمدٍ النبى وأزواجه أمهات المؤمنين، وذريته وآل بيته، كما صليت على آل إبراهيم، إنك حميد مجيد (يَا أَيُّهَا
+            الَّذِينَ آمَنُواْ اتَّقُواْ اللّهَ حَقَّ تُقَاتِهِ وَلاَ تَمُوتُنَّ إِلاَّ وَأَنتُم مُّسْلِمُونَ) ( آل
+            عمران
+            : 102 )
+            <span class="Toggel">
+              يَا أَيُّهَا النَّاسُ اتَّقُوا رَبَّكُمْ الَّذِي خَلَقَكُمْ مِنْ نَفْسٍ وَاحِدَةٍ وَخَلَقَ مِنْهَا
+              زَوْجَهَا
+              وَبَثَّ مِنْهُمَا رِجَالاً كَثِيرًا وَنِسَاءً وَاتَّقُوا اللَّهَ الَّذِي تَسَاءلُونَ بِهِ وَالأَرْحَامَ
+              إِنَّ
+              اللَّهَ كَانَ عَلَيْكُمْ رَقِيبًا﴾ ( النساء : 1 ) ﴿ يَا أَيُّهَا الَّذِينَ آَمَنُوا اتَّقُوا اللَّهَ
+              وَقُولُوا
+              قَوْلًا سَدِيدًا (70) يُصْلِحْ لَكُمْ أَعْمَالَكُمْ وَيَغْفِرْ لَكُمْ ذُنُوبَكُمْ وَمَنْ يُطِعِ اللَّهَ
+              وَرَسُولَهُ فَقَدْ فَازَ فَوْزًا عَظِيمًا (71) ﴾ ( الأحزاب : 70 - 71 ) .
+              أما بعد ...... فمعًا نخطو خطوات يسيرة نحو منهج تعاليم ديننا، وننهل من سنه نبينا صلى الله تعالى عليه وسلم،
+              منفذين أوامر ربنا ((وقل رب زدني علمًا))، وقول رسولنا صلى الله عليه وسلم "من خرج في طلب العلم فهو فى سبيل
+              الله
+              حتى يرجع" واثقين أن الأزهر الشريف هو قبلة العلم والمتعلمين على مر العصور والأزمان ... طامعين أن نكون لبنة
+              أُولى في تكوين جيل يقود الأمة من سباتها إلى درجات الرفعة والقيادة للعالم أجمع ... آملين أن يكون عملنا
+              وجهدنا
+              فى ميزان حسناتنا يوم لا ينفع مال ولا بنون
+              من أجل تلك المعاني وغيرها من المعانى السامية كانت رسالة معهد السراج المنير الأزهرى تتركز على محورين
+              أساسيين،
+              هما: رسالة تربوية - رسالة تعليمية
+              اولاً:الرسالة التربوية
+              وهى أساس قيام المعهد، وحجر الزاوية لإنشائه، والشغل الشاغل للقائمين عليه، وهذه الرسالة المنوط بها المعهد
+              تكون
+              في إطار تعاليم الإسلام الحنيف، بعيدًا عن الأفكار الضالة المضلة، والنزعات الهدامة الملمة، ملتزمين بأخلاق
+              وآداب
+              الإسلام، بواسطة مربين أفاضل، وإدارة على أعلى مستوى من تحمل المسئولية: وذلك لينشأ جيل صالح معتزًّا بنفسه،
+              ومفتخرًا بدينه ووطنه
+              ثانيا : الرسالة التعليمية
+              وهي النابعة من إيمان راسخ بأن نهضة أمتنا وتقدمها إنما يكون بمدى تقدم العلم، وأن يكون الطالب المسلم على
+              أعلى
+              مستوى من التقدم الأخلاقى والعلمي: ولذلك حرص المعهد حرصًا شديدًا على اختيار أفضل المعلمين والمعلمات، الذين
+              يدركون خطورة موقعهم، ويجعلون من قول النبى صلي الله عليه وسلم "إن الله وملائكته وأهل السماوات والأرض حتى
+              النملة
+              فى جحرها وحتى الحوت، ليصلون على معلمي الناس الخير" زادًا يكون نبراسًا يهتدون به فى حياتهم، محتسبين لله ما
+              يلاقونه فى سبيل ذلك من المشاق والصعوبات
+              وكذلك يحرص المعهد على استخدام أنسب الطرق التعليمية الحديثة، وما تتطلبها من وسائل تعليمية تعين على بلوغ
+              الهدف
+              المنشود من العملية التعليمية؛ عسى الله تعالى أن يرزقنا جيلًا ذا أخلاق قرآنية، وهداية نبوية، ليعود أثرها
+              بالطبع
+              على المستوى العلمى والثقافى للطالب المسلم؛ لتتبوأ مصر مضمار السيادة والريادة للأمة الإسلامية كلها، والله
+              تعالى
+              من وراء القصد، وهو حسبنا ونعم الوكيل، ولا حول ولا قوة إلا بالله العلى العظيم
+            </span>
+            <a href="#Top"><bdo dir=""> <output><span class="See">أقرأ أكثر</span> <span class="Dot">......</span>
+                </output></bdo></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End History -->
+    <!-- Start Number -->
+    <div class="Number f-c-c" id="Number">
+      <div class="title" id="Number" data-Name="Number">أرقام المعهد</div>
+      <div class="container d-flex justify-content-center">
+        <div class="number-box f-c-c">
+          <div class="The-Count f-c-c">
+            <div class="counter" data-number="3600">0</div>
+            <span>+</span>
+          </div>
+          <div class="TheName">طالب</div>
+        </div>
+        <div class="number-box f-c-c">
+          <div class="The-Count f-c-c">
+            <div class="counter" data-number="14">0</div>
+            <span>+</span>
+          </div>
+          <div class="TheName">سنوات الخبرة</div>
+        </div>
+        <div class="number-box f-c-c">
+          <div class="The-Count f-c-c">
+            <div class="counter" data-number="131">0</div>
+            <span>+</span>
+          </div>
+          <div class="TheName">المدرسين</div>
+        </div>
+        <div class="number-box f-c-c">
+          <div class="The-Count f-c-c">
+            <div class="counter" data-number="1106">0</div>
+            <span>+</span>
+          </div>
+          <div class="TheName">خريج</div>
+        </div>
+      </div>
+    </div>
+    <!-- End Number -->
+    <!-- Start Our Skills -->
+    <div class="Our-skills f-c-c">
+      <div class="title" id="Our-skills" data-Name="Our-skills">إحصائيات</div>
+      <div class="container-1 d-flex justify-content-center">
+        <div class="number d-flex justify-content-around w-100">
+          <div class="f-c-c">85%</div>
+          <div class="f-c-c">90%</div>
+          <div class="f-c-c">69%</div>
+          <div class="f-c-c">31%</div>
+        </div>
+        <div class="box h-100 w-100 d-flex justify-content-around align-items-end">
+          <div class="skills d-f position-relative justify-content-end h-100">
+            <div class="line h-100 d-flex justify-content-end position-relative">
+              <div class="line-1 w-100" id="line-1" data-height="85%"></div>
+            </div>
+          </div>
+          <div class="skills d-f position-relative justify-content-end h-100">
+            <div class="line h-100 d-flex justify-content-end position-relative">
+              <div class="line-1 w-100" id="line-2" data-height="90%"></div>
+            </div>
+          </div>
+          <div class="skills d-f position-relative justify-content-end h-100">
+            <div class="line h-100 d-flex justify-content-end position-relative">
+              <div class="line-1 w-100" id="line-3" data-height="69%"></div>
+            </div>
+          </div>
+          <div class="skills d-f position-relative justify-content-end h-100">
+            <div class="line h-100 d-flex justify-content-end position-relative">
+              <div class="line-1 w-100" id="line-4" data-height="31%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="name w-100">
+          <div>الكثافة</div>
+          <div>نسبة النجاح</div>
+          <div>عربي</div>
+          <div>لغات</div>
+        </div>
+      </div>
+    </div>
+    <!-- End Our Skills -->
+
+    <!-- Start Gallary -->
+    <div class="Gallary-View f-c-c" id="Gallary-View">
+      <div class="title" id="Gallary-View" data-Name="Gallary-View">المعرض</div>
+      <div class="Gallary-View-box d-flex">
+        <div class="box-left position-relative">
+          <p>
+            هخسؤيتخه يثخصيعحصخثي ثخحصع يحثصثص ثصه ث صؤهصثحنيختهث يؤتهت ؤهت هث عيخبتثخبتع حقخب قبخ
+            هقخباتقه بهث بهب اهثبا صخحث صهب اثبخح تصحخثب تعصثب صثخبح اتصح خثبتصخثب تصثخبحتثب هتثخب صب
+          </p>
+          <a href="./index2.html"><button class=" position-absolute"> فتح المعرض</button></a>
+        </div>
+        <div class="box-right">
+          <div class="contain d-flex">
+            <img src="./img/school.jpg" alt="مدرسة">
+            <img src="./img/الحاسب الآلي/نشاط الحاسب الالى الصف الخامس الابتدائى الفصل الدراسى الأول 2018-2019.jpg"
+              alt="نشاط الحاسب الالى الصف الخامس الابتدائى الفصل الدراسى الأول 2018-2019">
+            <img src="./img/بكرة قدم.jpg" alt="كرة قدم">
+            <img
+              src="./img/دراسات إجتماعية/نشاط الدراسات الاجتماعية الصف الرابع الابتدائى الفصل الدراسى الاول 2018-2019.jpg"
+              alt="نشاط الدراسات الاجتماعية الصف الرابع الابتدائى الفصل الدراسى الاول 2018-2019">
+            <img src="./img/./صور حفلات/أوائل رياض أطفال الفصل الدراسى الأول.jpg" alt="">
+            <img src="./img/صور رحلات/رحلة دريم بارك لرياض الأطفال.JPG" alt="رحلة دريم بارك لرياض الأطفال">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Gallary -->
+    <!-- Start Job -->
+    <div class="Job" id="Job">
+      <div class="title" id="Job" data-Name="Job">وظائف خالية</div>
+      <span class="content"></span>
+      <div class="container">
+
+        <div class="feat-00">
+          <div class="feat-01">
+            <div class="title-1">مدرس قرآن</div>
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+
+          <div class="feat-02">
+            <div class="feat-03">
+              <i class="fas fa-school"></i>
+              <div>خبرة 5 سنين</div>
+            </div>
+            <div class="feat-03">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <div>IQ شهادة </div>
+            </div>
+            <div class="feat-03">
+              <i class="fas fa-graduation-cap"></i>
+              <div>IQ شهادة </div>
+            </div>
+            <div class="feat-03">
+              <i class="fas fa-receipt"></i>
+              <div> حاصل علي شهادة ICDL</div>
+            </div>
+          </div>
+          <a>
+            <div class="Contact">التقدم</div>
+          </a>
+        </div>
+        <div class="feat-00">
+          <div class="feat-01">
+            <div class="title-1">مدرس لغة عربية</div>
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+
+          <div class="feat-02">
+            <div class="feat-03">
+              <i class="fas fa-school"></i>
+              <div>خبرة 5 سنين</div>
+            </div>
+            <div class="feat-03">
+              <i class="fas fa-graduation-cap"></i>
+              <div> تواصل فعال</div>
+            </div>
+            <div class="feat-03">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <div>IQ شهادة </div>
+            </div>
+            <div class="feat-03">
+              <i class="fas fa-receipt"></i>
+              <div> حاصل علي شهادة ICDL</div>
+            </div>
+          </div>
+          <a>
+            <div class="Contact">التقدم</div>
+          </a>
+        </div>
+        <div class="feat-00">
+          <div class="feat-01">
+            <div class="title-1">عاملة نظافة</div>
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+
+          <div class="feat-02">
+            <div class="feat-03">
+              <i class="fas fa-school"></i>
+              <div>خبرة 5 سنين</div>
+            </div>
+            <div class="feat-03">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <div>IQ شهادة </div>
+            </div>
+            <div class="feat-03">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <div>IQ شهادة </div>
+            </div>
+            <div class="feat-03">
+              <i class="fas fa-thumbs-up"></i>
+              <div> مظهر لائق</div>
+            </div>
+          </div>
+          <a>
+            <div class="Contact">التقدم</div>
+          </a>
+        </div>
+        <div class="feat-00">
+          <div class="feat-01">
+            <div class="title-1"> مدرسة لغة إنجليزية</div>
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+
+          <div class="feat-02">
+            <div class="feat-03">
+              <i class="fas fa-school"></i>
+              <div>خبرة 5 سنين</div>
+            </div>
+            <div class="feat-03">
+              <i class="fas fa-check"></i>
+              <div>IQ شهادة </div>
+            </div>
+            <div class="feat-03">
+              <i class="fas fa-check"></i>
+              <div>IQ شهادة </div>
+            </div>
+            <div class="feat-03">
+              <i class="fas fa-receipt"></i>
+              <div> حاصل علي شهادة ICDL</div>
+            </div>
+          </div>
+          <a>
+            <div class="Contact">التقدم</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Job -->
+
+    <!-- Start Qu -->
+    <div class="Qu" id="Qu">
+      <div class="title" id="Qu" data-Name="Qu">الأسئلة شائعة</div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              السؤال الأول
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>وهذا سؤال جيد و متكرر.</strong>
+              نيؤماه خسيؤيسخهت يتنؤلاعيسؤ
+              يؤيؤس
+              نياؤياؤيتعاىيؤخهتؤ يه ؤخسي تخثيحخ يث ؤخيتيخكح يخؤ يؤتحخيؤت خؤ تيخؤتخيحؤت كيكيؤخيتؤ خ يخؤ
+              ينؤاينؤيه,
+              يتنؤلاعيسؤ لا عيؤ يهؤيؤهخيالا ثصثهؤغاثخه يهثاثيثهثي هثهخصاصخايي ثهيصخهيضىص يتؤيؤهيتؤؤ ؤيه
+              يتنؤلاعيسؤ لا عيؤ يهؤيؤهخيالا ثصثهؤغاثخه يهثاثيثهثي هثهخصاصخايي ثهيصخهيضىص يتؤيؤهيتؤؤ ؤيه
+              <code>وهذا يوجد في مدارس السراج المنير الأزهري فقط</code>,
+              يؤهتؤهخياسؤ يهسؤت يهؤستهيؤ سيؤسحت .
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              السؤال الثانى
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>وهذا سؤال جيد و متكرر.</strong>
+              نيؤماه خسيؤيسخهت يتنؤلاعيسؤ
+              يؤيؤس
+              نياؤياؤيتعاىيؤخهتؤ يه ؤخسي تخثيحخ يث ؤخيتيخكح يخؤ يؤتحخيؤت خؤ تيخؤتخيحؤت كيكيؤخيتؤ خ يخؤ
+              ينؤاينؤيه,
+              يتنؤلاعيسؤ لا عيؤ يهؤيؤهخيالا ثصثهؤغاثخه يهثاثيثهثي هثهخصاصخايي ثهيصخهيضىص يتؤيؤهيتؤؤ ؤيه
+              يتنؤلاعيسؤ لا عيؤ يهؤيؤهخيالا ثصثهؤغاثخه يهثاثيثهثي هثهخصاصخايي ثهيصخهيضىص يتؤيؤهيتؤؤ ؤيه
+              <code>وهذا يوجد في مدارس السراج المنير الأزهري فقط</code>,
+              يؤهتؤهخياسؤ يهسؤت يهؤستهيؤ سيؤسحت .
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              السؤال الثالث
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>وهذا سؤال جيد و متكرر.</strong>
+              نيؤماه خسيؤيسخهت يتنؤلاعيسؤ
+              يؤيؤس
+              نياؤياؤيتعاىيؤخهتؤ يه ؤخسي تخثيحخ يث ؤخيتيخكح يخؤ يؤتحخيؤت خؤ تيخؤتخيحؤت كيكيؤخيتؤ خ يخؤ
+              ينؤاينؤيه,
+              يتنؤلاعيسؤ لا عيؤ يهؤيؤهخيالا ثصثهؤغاثخه يهثاثيثهثي هثهخصاصخايي ثهيصخهيضىص يتؤيؤهيتؤؤ ؤيه
+              يتنؤلاعيسؤ لا عيؤ يهؤيؤهخيالا ثصثهؤغاثخه يهثاثيثهثي هثهخصاصخايي ثهيصخهيضىص يتؤيؤهيتؤؤ ؤيه
+              <code>وهذا يوجد في مدارس السراج المنير الأزهري فقط</code>,
+              يؤهتؤهخياسؤ يهسؤت يهؤستهيؤ سيؤسحت .
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              السؤال الرابع
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>وهذا سؤال جيد و متكرر.</strong>
+              نيؤماه خسيؤيسخهت يتنؤلاعيسؤ
+              يؤيؤس
+              نياؤياؤيتعاىيؤخهتؤ يه ؤخسي تخثيحخ يث ؤخيتيخكح يخؤ يؤتحخيؤت خؤ تيخؤتخيحؤت كيكيؤخيتؤ خ يخؤ
+              ينؤاينؤيه,
+              يتنؤلاعيسؤ لا عيؤ يهؤيؤهخيالا ثصثهؤغاثخه يهثاثيثهثي هثهخصاصخايي ثهيصخهيضىص يتؤيؤهيتؤؤ ؤيه
+              يتنؤلاعيسؤ لا عيؤ يهؤيؤهخيالا ثصثهؤغاثخه يهثاثيثهثي هثهخصاصخايي ثهيصخهيضىص يتؤيؤهيتؤؤ ؤيه
+              <code>وهذا يوجد في مدارس السراج المنير الأزهري فقط</code>,
+              يؤهتؤهخياسؤ يهسؤت يهؤستهيؤ سيؤسحت .
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Qu -->
+    <!-- Start Contact Us -->
+    <div class="Contact-Us" id="Contact-Us">
+      <div class="container">
+        <div class="title" id="Contact-Us" data-Name="Contact-Us">تواصل معنا</div>
+        <div class="boxes">
+          <div class="box">
+            <div>
+              <i class="fas fa-clock"></i>
+              <a href="" class="Text">
+                <div class="The-Information">
+                  from 10:00Am to 2:00Pm
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <div>
+              <i class="fas fa-phone-alt"></i>
+              <a href="">
+                <div class="The-Information">
+                  (02)27300105
+                </div>
+              </a>
+            </div>
+            <a class="span" id="copy">نسخ الرقم</a>
+          </div>
+          <div class="box">
+            <div>
+
+              <i class="fab fa-whatsapp"></i>
+              <a href="">
+                <div class="The-Information">
+                  https://www.whatsapp.com/send/
+                </div>
+              </a>
+            </div>
+            <a href="https://www.whatsapp.com/send/" class="span">تواصل معنا</a>
+          </div>
+          <div class="box">
+            <div>
+
+              <i class="fa fa-envelope"></i>
+              <a href="">
+                <div class="The-Information">
+                  alserajalmoneer@yahoo.com
+                </div>
+              </a>
+            </div>
+            <a href="alserajalmoneer@yahoo.com" class="span"> أرسل رسالة</a>
+          </div>
+          <div class="box">
+            <div>
+
+              <i class="fab fa-youtube"></i>
+              <a href="">
+                <div class="The-Information">
+                  https://www.facebook.com/alserajalmuner/
+                </div>
+              </a>
+            </div>
+            <a href="https://www.facebook.com/alserajalmuner/" class="span">زيارة الموقع</a>
+          </div>
+          <div class="box">
+            <div>
+              <i class="fab fa-facebook-f"></i>
+              <a href="">
+                <div class="The-Information">
+                  https://www.facebook.com/alserajalmuner/
+                </div>
+              </a>
+            </div>
+            <a href="https://www.facebook.com/alserajalmuner/" class="span">زيارة الموقع</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Us -->
+    <!-- Strat Count  -->
+    <div class="Count">
+      <div class="container">
+        <div class="Application">
+          <div> نزل تطبيق السراج المنير الآن علي </div>
+          <div>
+            <a href="https://www.google play.com/">
+
+              <span>
+                <i class="fab fa-google-play"></i>
+                جوجل بلاي
+              </span>
+            </a>
+            <a href="https://www.app store.com/">
+
+              <span>
+                <i class="fab fa-app-store"></i>
+                آب ستور
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="counter">
+          عدد الزوار <span class="counter_span">50943</span>
+        </div>
+      </div>
+    </div>
+    <!-- End Count  -->
+    <div class="subscribe">
+      <div class="container">
+        <span> لمعرفة أحدث أخبار المعهد :</span>
+        <form method="dialog">
+          <input type="email" placeholder="أدخل عنوان الإيميل">
+          <input type="submit" value="أشتراك" id="button">
+        </form>
+      </div>
+    </div>
+    <!-- Start Footer  -->
+    <footer>
+      <div class="Text">Made By <a href="../../monthem/index.html">
+          <div>Salem</div>
+        </a> ©<span> 2022</span> </div>
+    </footer>
+    <!-- End Footer  -->
+    <!-- Start Button Top  -->
+    <button class="Button-Top">
+      <div class="line"></div>
+    </button>
+    <!-- End Button Top  -->
+    <!-- Start Bullets  -->
+    <div class="Bullets">
+      <div class="Bullet" data-section="#Home">
+        <div class="tooltip-zero">الرئيسية</div>
+      </div>
+      <div class="Bullet" data-section="#why">
+        <div class="tooltip-zero">لماذا معهد السراج المنير ؟</div>
+      </div>
+      <div class="Bullet" data-section="#News">
+        <div class="tooltip-zero">أحدث الأخبار</div>
+      </div>
+      <div class="Bullet" data-section="#Date">
+        <div class="tooltip-zero">تاريخ المعهد</div>
+      </div>
+      <div class="Bullet" data-section="#Massege">
+        <div class="tooltip-zero">رسالةالمعهد</div>
+      </div>
+      <div class="Bullet" data-section="#Number">
+        <div class="tooltip-zero">أرقام المعهد</div>
+      </div>
+      <div class="Bullet" data-section="#Our-skills">
+        <div class="tooltip-zero">إحصائيات</div>
+      </div>
+      <div class="Bullet" data-section="#Gallary-View">
+        <div class="tooltip-zero">المعرض</div>
+      </div>
+      <div class="Bullet" data-section="#Job">
+        <div class="tooltip-zero">وظائف خالية</div>
+      </div>
+      <div class="Bullet" data-section="#Qu">
+        <div class="tooltip-zero">الأسئلة شائعة</div>
+      </div>
+      <div class="Bullet" data-section="#Contact-Us">
+        <div class="tooltip-zero">تواصل معنا</div>
+      </div>
+    </div>
+    <!-- End Bullets  -->
+    <!-- Strat popup Email -->
+    <div class="popup-Email"></div>
+    <!-- End popup Email -->
+    <!-- Strat Massege Of Copy  -->
+    <div class="New_Massege_Of_Copy"></div>
+    <!-- End Massege Of Copy  -->
+
+
+
+
+    <!-- Strat Online  -->
+    <!-- <div class="container-Online f-c-c "> -->
+    <!-- <h2 class="title-Online">Offline Now</h2> -->
+    <!-- <ul class="ul-Online"> -->
+    <!-- <li>checking your chicken</li> -->
+    <!-- <li>checking your proxy</li> -->
+    <!-- <li>Runing your PC</li> -->
+    <!-- </ul> -->
+    <!-- <button class="Reload">Reload</button> -->
+    <!-- </div> -->
+    <!-- End Online  -->
+    <!-- <script src="./js/all.min.js"></script> -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/master.js"></script>
+  </body>
+
+</html>
